@@ -1,28 +1,86 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <section>
+      <intro-component></intro-component>
+      <interaction-component></interaction-component>
+    </section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import InteractionComponent from "./components/InteractionComponent.vue";
+import IntroComponent from "./components/IntroComponent.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    IntroComponent,
+    InteractionComponent,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang&family=Kanit&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Kanit", sans-serif;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 50px;
+}
+h4 {
+  font-size: 40px;
+}
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6,
+.b7,
+.b8 {
+  font-family: "Fahkwang", sans-serif;
+}
+.b1 {
+  font-size: 35px;
+}
+.b2 {
+  font-size: 30px;
+}
+.b3 {
+  font-size: 25px;
+}
+.b4 {
+  font-size: 20px;
+}
+.b5 {
+  font-size: 15px;
+}
+.b6 {
+  font-size: 14px;
+}
+.b7 {
+  font-size: 12px;
+}
+.b8 {
+  font-size: 8px;
+}
+.bookmark-bg{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
 }
 </style>
