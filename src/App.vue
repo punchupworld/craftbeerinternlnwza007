@@ -3,6 +3,7 @@
     <section>
       <intro-component></intro-component>
       <interaction-component></interaction-component>
+      <outtro-component></outtro-component>
     </section>
   </div>
 </template>
@@ -10,10 +11,12 @@
 <script>
 import InteractionComponent from "./components/InteractionComponent.vue";
 import IntroComponent from "./components/IntroComponent.vue";
+import OuttroComponent from './components/OuttroComponent.vue';
 export default {
   components: {
     IntroComponent,
     InteractionComponent,
+    OuttroComponent,
   },
 };
 </script>
