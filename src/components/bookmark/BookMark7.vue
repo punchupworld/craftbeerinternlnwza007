@@ -20,13 +20,6 @@ export default {
 </script>
 
 <style scoped>
-span {
-  /* transform: rotate(20deg) !important; */
-  -webkit-text-stroke: 0.1px black;
-  color: white;
-  font-size: 55px;
-  font-weight: bold;
-}
 .bookmark-bg2{
   width: 100vw;
   height: 100vh;

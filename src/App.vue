@@ -12,6 +12,7 @@
 import InteractionComponent from "./components/InteractionComponent.vue";
 import IntroComponent from "./components/IntroComponent.vue";
 import OuttroComponent from './components/OuttroComponent.vue';
+
 export default {
   components: {
     IntroComponent,
