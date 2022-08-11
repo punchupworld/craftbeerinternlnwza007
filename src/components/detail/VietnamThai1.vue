@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: "VnTh1",
+  name: "VietnamThai1",
 };
 </script>
 
