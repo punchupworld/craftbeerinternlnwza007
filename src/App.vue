@@ -4,17 +4,6 @@
       <intro-component></intro-component>
       <interaction-component></interaction-component>
       <outtro-component></outtro-component>
-      
-      <vue-aos animation-class="zoomIn animated">
-        <h1>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-          fugit quod fugiat ipsam recusandae excepturi ullam ab consectetur,
-          officiis saepe dolores minus. Illum beatae sapiente porro libero
-          mollitia quis nihil, temporibus aliquam animi blanditiis error ad nisi
-          numquam iure dolorem aut? Vero deserunt asperiores tempora veritatis
-          similique, voluptatem atque consequuntur.
-        </h1>
-      </vue-aos>
     </section>
   </div>
 </template>
@@ -96,6 +85,5 @@ h4 {
 .bookmark-bg {
   width: 100vw;
   height: 100vh;
-  background-color: white;
 }
 </style>

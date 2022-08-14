@@ -3,14 +3,21 @@
     <section>
       <book-mark-1></book-mark-1>
       <book-mark-2></book-mark-2>
-
       <book-mark-3></book-mark-3>
-      <book-mark-4></book-mark-4>
-      <vietnam-thai-1></vietnam-thai-1>
-      <act-1></act-1>
-      <act-2></act-2>
 
-      <modal-component></modal-component>
+      <book-mark-4></book-mark-4>
+
+      <vietnam-thai-1></vietnam-thai-1>
+
+      <vue-aos animation-class="fadeIn animated">
+        <act-1></act-1>
+      </vue-aos>
+      <vue-aos animation-class="zoomIn animated">
+        <act-2></act-2>
+      </vue-aos>
+      <vue-aos animation-class="fadeIn animated">
+        <modal-component></modal-component>
+      </vue-aos>
     </section>
   </div>
 </template>

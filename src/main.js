@@ -6,9 +6,9 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import VAnimateCss from 'v-animate-css';
 import * as VueAos from 'vue-aos'
 import 'animate.css'
-import VAnimateCss from 'v-animate-css';
 
 
 

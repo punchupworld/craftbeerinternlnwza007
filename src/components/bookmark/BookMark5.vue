@@ -1,9 +1,13 @@
 <template>
   <div>
-    <div class="bookmark-bg container-fluid d-flex justify-content-center align-items-center">
-      <div class="text-center">
-        <h1>แต่ทำไมคราฟต์เบียร์ไทย ไปไม่ถึงไหน <span>?</span></h1>
-      </div>
+    <div
+      class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
+    >
+      <vue-aos animation-class="zoomIn animated">
+        <div class="text-center">
+          <h1>แต่ทำไมคราฟต์เบียร์ไทย ไปไม่ถึงไหน <span>?</span></h1>
+        </div>
+      </vue-aos>
     </div>
   </div>
 </template>
@@ -22,5 +26,4 @@ span {
   font-size: 55px;
   font-weight: bold;
 }
-
 </style>

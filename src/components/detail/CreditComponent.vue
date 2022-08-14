@@ -2,10 +2,12 @@
   <div>
     <section>
       <div class="container-fluid d-flex justify-content-center flex-column">
+        <!-- header -->
         <div class="text-center">
           <h3 class="m-5">ขอขอบคุณ</h3>
         </div>
 
+        <!-- body -->
         <div class="row">
           <div class="col-4 text-center">
             <p class="b4">ข้อมูลจาก</p>
@@ -32,12 +34,55 @@
               แฮปปี้นิวเบียร์ (Happy New Beer)
             </p>
             <br />
+            <br />
           </div>
 
           <div class="col-4 text-center">
             <p class="b4">หน่วยงานและองค์กร</p>
           </div>
+
+          <div class="col-5">
+            <ul>
+              <li class="b5" v-for="(item, index) in companies" :key="index">
+                {{ item }}
+              </li>
+            </ul>
+            <br />
+            <br />
+          </div>
+
+          <div class="col-4 text-center">
+            <p class="b4">ผู้ให้สัมภาษณ์</p>
+          </div>
+
+          <div class="col-5">
+            <ul>
+              <li class="b5" v-for="(item, index) in interviewee" :key="index">
+                {{ item }}
+              </li>
+            </ul>
+            <br />
+            <br />
+          </div>
+
+          <div class="col-4 text-center">
+            <p class="b4">เพจ Facebook</p>
+          </div>
+
+          <div class="col-5">
+            <ul>
+              <li class="b5" v-for="(item, index) in pages" :key="index">
+                {{ item }}
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!-- logo -->
+        <div class="text-center">
+          <h3 class="m-5">ขอขอบคุณ</h3>
+        </div>
+
       </div>
     </section>
   </div>
@@ -64,6 +109,17 @@ export default {
         "บทความ “ห้ามขายเหล้าวันพระใหญ่ : รัฐกับข้ออ้างบนพนักพิงของศาสนา”",
         "ร่างพระราชบัญญัติภาษีสรรพสามิต (ฉบับที่ ..) พ.ศ. …. (ร่าง พ.ร.บ.สุราก้าวหน้า)",
       ],
+      companies: [
+        "BLT Bangkok",
+        "FLANDERS INVESTMENT & TRADE MARKET SURVEY",
+        "RateBeer",
+        "The Momentum",
+        "มติชนออนไลน์",
+        "BLT Bangkok",
+        "สถาบันวิจัยเพื่อการพัฒนาประเทศไทย (ทีดีอาร์ไอ)",
+      ],
+      interviewee: ["กษิดิ์พัฒน์ ศุกรสุต", "จิรภาส สระโร"],
+      pages: ["แดกเบียร์ให้เพลียแคม"],
     };
   },
 };

@@ -3,9 +3,11 @@
     <div
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
     >
-      <div class="text-center">
-        <h1>แล้วคราฟต์เบียร์สัญชาติไทยไปผลิตที่ไหน <span>?</span></h1>
-      </div>
+      <vue-aos animation-class="zoomIn animated">
+        <div class="text-center">
+          <h1>แล้วคราฟต์เบียร์สัญชาติไทยไปผลิตที่ไหน <span>?</span></h1>
+        </div>
+      </vue-aos>
     </div>
   </div>
 </template>

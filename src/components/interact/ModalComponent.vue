@@ -12,7 +12,11 @@
 
       <div class="row">
         <div class="col-4">
-          <div class="card"></div>
+          <button
+            class="btn btn-primary"
+            data-bs-target="#showForm"
+            data-bs-toggle="modal"
+          >open</button>
         </div>
         <div class="col-4">
           <div class="card"></div>
@@ -26,6 +30,28 @@
         <p class="col-4">text1</p>
       </div>
     </div>
+
+    <!-- modal -->
+    <div class="modal" id="showForm">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">แบบฟอร์มลงทะเบียน</h5>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              sapiente, laborum ab nostrum nam doloremque recusandae fugit vitae
+              totam ipsam?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn-success">บันทึกข้อมูล</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </template>
 
@@ -47,7 +73,7 @@ h4 {
 .card {
   height: 5rem;
   cursor: pointer;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 .highlight {
   background-color: white;
