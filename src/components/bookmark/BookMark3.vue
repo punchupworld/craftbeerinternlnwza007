@@ -1,15 +1,12 @@
 <template>
   <div>
     <div
-      class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
+      class="bookmark-bg2 container-fluid d-flex justify-content-center align-items-center"
     >
-      <vue-aos animation-class="zoomIn animated">
-        <div class="text-center">
-          <h2>ถึงแม้ว่าจะเป็นคราฟต์เบียร์ของไทย</h2>
-          <h1>แต่กลับต้องไปผลิตที่ต่างประเทศ</h1>
-          <h2>และถ้าได้รับรางวัลก็ต้องรับในฐานะประเทศที่ผลิต</h2>
-        </div>
-      </vue-aos>
+      <img src="@/assets/pics/frame3/3.7/background.svg"/>
+      <div class="text-right">
+        <img src="/assets/pics/frame3/3.7/text.svg" />
+      </div>
     </div>
   </div>
 </template>
@@ -20,4 +17,18 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.bookmark-bg2 {
+  padding: 0;
+  width: 100vw;
+  position: relative;
+}
+.bookmark-bg2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-right {
+  position: absolute;
+}
+</style>

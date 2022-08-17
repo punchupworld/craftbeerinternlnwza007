@@ -1,54 +1,76 @@
 <template>
   <div>
-    <section>
-      <div
-        class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
-      >
-        <vue-aos animation-class="zoomIn animated">
-          <div class="text-center">
-            <p class="b4">จากการเก็บข้อมูลคราฟต์เบียร์ 24 แบรนด์พบว่า</p>
-            <p class="b4">กว่า <span>7</span> แบรนด์ต้องไปผลิตที่เวียดนาม</p>
+    <div class="bg container-fluid">
+      <div class="container">
+        <div class="text-center pt-5">
+          <img src="@/assets/pics/frame4/4.1/text2.svg" alt="" />
+        </div>
 
-            <br />
-            <br />
-
-            <p class="b4">
-              นอกจากนครโฮจิมินห์จะเป็นเมืองหลวงแห่งคราฟต์เบียร์แล้ว
-            </p>
-            <p class="b4">เวียดนามยังเป็นประเทศเดียวในอาเซียน</p>
-            <p class="b4">
-              ที่ติดท็อป 10 อันดับของประเทศที่ผลิตเบียร์มากที่สุดในปี 2020
-            </p>
-            <p class="b4">
+        <div class="row mt-5">
+          <div class="col-7 text-center">
+            <p class="b5">
+              นอกจาก<span class="b4"> นครโฮจิมินห์ </span
+              >จะเป็นเมืองหลวงแห่งคราฟต์เบียร์แล้ว <br />
+              <span class="b4">เวียดนาม </span>
+              ยังเป็นประเทศเดียวในอาเซียนที่ติดท็อป 10 อันดับ
+              <br />
+              <br />
+              <br />
+              <br />
               อีกทั้งคนรุ่นใหม่ในเวียดนามมีพฤติกรรมนิยมการบริโภคคราฟต์เบียร์มากขึ้น
-            </p>
-            <p class="b4">
+              <br />
               เวียดนามจึงมักจะเป็นจุดหมายปลายทางของผู้ผลิตคราฟต์เบียร์รายย่อย
             </p>
 
-            <br />
-            <br />
+            <div class="imgfont">
+              <img src="@/assets/pics/frame4/4.1/text1.svg" alt="" />
+            </div>
 
-            <p class="b4">
-              เรามาลองเปรียบเทียบกันว่ามีข้อจำกัดด้านใดบ้างที่ทำให้
-            </p>
-            <p class="b4">คราฟต์เบียร์ไทยไปไม่ไกลเท่าเวียดนาม</p>
-
-            <br />
-            <br />
-
+            <div
+              class="imgbeer d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="@/assets/pics/beer24/mahanakhon-white-ale.png"
+                class="rotate1"
+              />
+              <img
+                src="@/assets/pics/beer24/pheebok-sawasdee-ipa.png"
+                class="rotate2"
+              />
+              <img
+                src="@/assets/pics/beer24/look-krung-brew-konsuayjaidum.png"
+                class="rotate1"
+              />
+              <img
+                src="@/assets/pics/beer24/golden-coins-yaowarat-pale-ale.png"
+                class="rotate2"
+              />
+              <img
+                src="@/assets/pics/beer24/bootleg-brothers-island-hopper.png"
+                class="rotate1"
+              />
+              <img
+                src="@/assets/pics/beer24/yod-beer-bearnana.png"
+                class="rotate2"
+              />
+              <img
+                src="@/assets/pics/beer24/triple-pearl-galaxy-villa.png"
+                class="rotate1"
+              />
+            </div>
+          </div>
+          <div class="col-5">
             <p class="b5">
-              ** ข้อมูลจาก BarthHaas รายงานว่าในปี 2020 เวียดนามผลิตเบียร์ได้
-              40,000,000 hl
-            </p>
-            <p class="b5">
-              เวียดนามจึงอยู่ในลำดับที่ 8 จาก 10
-              อันดับประเทศที่ผลิตเบียร์มากที่สุด **
+              * ข้อมูลจาก BarthHaas รายงานว่า <br />
+              ในปี 2020 เวียดนามผลิตเบียร์ได้ <br />
+              40,000,000 hl เวียดนามจึงอยู่ใน <br />
+              ลำดับที่ 8 จาก 10 อันดับประเทศ <br />
+              ที่ผลิตเบียร์มากที่สุด *
             </p>
           </div>
-        </vue-aos>
+        </div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
@@ -59,11 +81,45 @@ export default {
 </script>
 
 <style scoped>
-p {
-  margin-bottom: 0;
+.bg {
+  background: #2c2828;
+  background-image: url("~@/assets/pics/frame4/4.1/map.svg");
+  background-repeat: no-repeat;
+  height: 160vh;
 }
-span {
-  border: black 1px solid;
-  padding: 5px 10px;
+
+.container img {
+  width: 55%;
+}
+p {
+  color: white;
+}
+p span {
+  color: #f8ef8f;
+}
+.imgfont img {
+  width: 80%;
+  margin: 5rem 0;
+}
+.imgbeer img {
+  width: 4%;
+  margin: 2rem;
+}
+.rotate1 {
+  transform: rotate(5deg);
+}
+.rotate2 {
+  transform: rotate(-5deg);
+}
+.col-5 {
+  position: relative;
+}
+.col-5 p {
+  color: #cbcbcb;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+  margin: 0;
 }
 </style>

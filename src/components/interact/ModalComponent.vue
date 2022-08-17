@@ -12,11 +12,7 @@
 
       <div class="row">
         <div class="col-4">
-          <button
-            class="btn btn-primary"
-            data-bs-target="#showForm"
-            data-bs-toggle="modal"
-          >open</button>
+          <div class="card" v-b-modal.modal-1></div>
         </div>
         <div class="col-4">
           <div class="card"></div>
@@ -32,26 +28,9 @@
     </div>
 
     <!-- modal -->
-    <div class="modal" id="showForm">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">แบบฟอร์มลงทะเบียน</h5>
-          </div>
-          <div class="modal-body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-              sapiente, laborum ab nostrum nam doloremque recusandae fugit vitae
-              totam ipsam?
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button class="btn-success">บันทึกข้อมูล</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+    <b-modal id="modal-1"  hide-footer>
+      <p class="my-4">Hello from modal!</p>
+    </b-modal>
   </div>
 </template>
 
@@ -88,5 +67,7 @@ h4 {
 .b5 {
   color: white;
 }
+
+/* modal */
 </style>
->
+

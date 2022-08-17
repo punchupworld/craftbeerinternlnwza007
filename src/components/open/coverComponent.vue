@@ -2,7 +2,10 @@
   <div>
     <div class="bookmark-bg container-fluid">
       <div class="text-center p-4">
-        <p class="b5">*ผลงานชิ้นนี้เหมาะกับการดูบนหน้าจอคอมพิวเตอร์*</p>
+        <p class="b5">
+          *ผลงานชิ้นนี้เหมาะกับ <br />
+          การดูบนหน้าจอคอมพิวเตอร์*
+        </p>
       </div>
 
       <div class="row">
@@ -13,11 +16,18 @@
           class="col-5 d-flex justify-content-center align-items-center"
         ></div>
       </div>
+
+      <div class="text-center">
+        <box-icon name="down-arrow-alt"></box-icon>
+      </div>
+      
     </div>
   </div>
 </template>
 
 <script>
+import "boxicons"
+
 export default {
   name: "coverComponent",
   data() {
@@ -34,10 +44,12 @@ export default {
   background-image: url("~@/assets/pics/cover/background.svg");
   /* background-color: burlywood; */
   object-fit: cover;
+  background-color: #e3eaf0;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
+
 .col-7 img {
   width: 160%;
 }
+
 </style>

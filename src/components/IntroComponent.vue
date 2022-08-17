@@ -1,9 +1,7 @@
 <template>
   <div>
-    <section>
       <cover-component></cover-component>
       <shelf-chart></shelf-chart>
-    </section>
   </div>
 </template>
 

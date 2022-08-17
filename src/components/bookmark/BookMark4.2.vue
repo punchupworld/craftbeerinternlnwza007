@@ -3,23 +3,18 @@
     <div
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
     >
-      <vue-aos animation-class="zoomIn animated">
-        <div class="container">
-          <img src="@/assets/pics/frame4/4/topic.svg" alt="" />
-        </div>
-      </vue-aos>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "BookMark5",
+  name: "BookMark4.2",
 };
 </script>
 
 <style scoped>
 .bookmark-bg {
-  background: #2c2828;
+  background-color: #f8ef8f;
 }
 </style>

@@ -11,10 +11,13 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.0",
     "bootstrap-vue": "^2.22.0",
+    "boxicons": "^2.1.2",
     "core-js": "^3.6.5",
+    "intersection-observer": "^0.12.2",
     "v-animate-css": "^0.0.5",
     "vue": "^2.6.11",
-    "vue-aos": "^2.3.0"
+    "vue-aos": "^2.3.0",
+    "vue-scrollama": "^2.0.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",

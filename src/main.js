@@ -10,8 +10,6 @@ import VAnimateCss from 'v-animate-css';
 import * as VueAos from 'vue-aos'
 import 'animate.css'
 
-
-
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 

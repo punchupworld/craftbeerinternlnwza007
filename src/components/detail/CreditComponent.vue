@@ -1,14 +1,14 @@
 <template>
   <div>
     <section>
-      <div class="container-fluid d-flex justify-content-center flex-column">
+      <div class="bg container-fluid d-flex justify-content-center flex-column">
         <!-- header -->
         <div class="text-center">
           <h3 class="m-5">ขอขอบคุณ</h3>
         </div>
 
         <!-- body -->
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-4 text-center">
             <p class="b4">ข้อมูลจาก</p>
           </div>
@@ -77,12 +77,6 @@
             </ul>
           </div>
         </div>
-
-        <!-- logo -->
-        <div class="text-center">
-          <h3 class="m-5">ขอขอบคุณ</h3>
-        </div>
-
       </div>
     </section>
   </div>
@@ -126,6 +120,9 @@ export default {
 </script>
 
 <style scoped>
+.bg{
+  background: #F8EF8F;
+}
 p {
   margin-bottom: 0;
 }

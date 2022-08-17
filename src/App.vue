@@ -3,6 +3,7 @@
     <section>
       <intro-component></intro-component>
       <interaction-component></interaction-component>
+      <problem-component></problem-component>
       <outtro-component></outtro-component>
     </section>
   </div>
@@ -12,12 +13,14 @@
 import InteractionComponent from "./components/InteractionComponent.vue";
 import IntroComponent from "./components/IntroComponent.vue";
 import OuttroComponent from "./components/OuttroComponent.vue";
+import ProblemComponent from './components/problemComponent.vue';
 
 export default {
   components: {
     IntroComponent,
     InteractionComponent,
     OuttroComponent,
+    ProblemComponent,
   },
 };
 </script>
