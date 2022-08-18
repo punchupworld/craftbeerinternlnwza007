@@ -3,13 +3,17 @@
     <div class="main2 d-flex">
       <div class="left">
         <vue-aos animation-class="zoomIn animated">
-          <img v-if="step == 0" src="@/assets/pics/line_icon.svg" alt="" />
           <img
-            v-else-if="step == 1"
-            src="@/assets/pics/facebook_icon.svg"
+            v-if="step == 0"
+            src="@/assets/pics/shelfchart/2.1/shelf1.svg"
             alt=""
           />
-          <img v-else src="@/assets/pics/twitter_icon.svg" alt="" />
+          <img
+            v-else-if="step == 1"
+            src="@/assets/pics/shelfchart/2.2/shelf2.svg"
+            alt=""
+          />
+          <img v-else src="@/assets/pics/shelfchart/2.3/shelf3.svg" alt="" />
         </vue-aos>
       </div>
 
@@ -29,7 +33,17 @@
 
             <div class="imgtext d-flex mb-4">
               <p class="b4">ล้วนเป็น</p>
-              <img src="@/assets/pics/shelfchart/2.2/lager.svg" />
+              <img
+                src="@/assets/pics/shelfchart/2.2/lager.svg"
+                v-b-popover.hover.bottom="
+                  `ลาเกอร์ (Lager) = เบียร์ที่มีรสฮอปส์ค่อนข้างชัดเจน
+โดดเด่นเรื่องความซ่า แตกต่างจากเบียร์ประเภทใหญ่
+อีกประเภท คือ เอล (Ale) ที่จะมีรสชาติหวาน มีกลิ่นผลไม้
+หรือเครื่องเทศ ลาเกอร์แบ่งย่อยได้อีกมากกว่า 25 ประเภท
+ขึ้นอยู่กับเทคนิควิธีและรายละเอียดปลีกย่อยของผู้ผลิต`
+                "
+                title="ลาเกอร์คืออะไร ?"
+              />
             </div>
 
             <p class="b4">แต่ด้วยการผลิตครั้งละปริมาณมาก</p>
@@ -37,17 +51,13 @@
 
             <div class="imgtext d-flex align-items-center">
               <p class="b4">อีก <span class="b2">1%</span> ที่เหลือคือ</p>
-              <img
-                src="@/assets/pics/shelfchart/2.2/lager.svg"
-                class="rotate1"
-              />
+              <!-- <img src="@/assets/pics/shelfchart/2.2/1.svg" class="rotate1" /> -->
+              <div class="rotate1 highlight2"><p class="b3">"คราฟเบียร์"</p></div>
             </div>
             <div class="imgtext d-flex mb-5">
               <p class="b4">และ</p>
-              <img
-                src="@/assets/pics/shelfchart/2.2/lager.svg"
-                class="rotate2"
-              />
+              <!-- <img src="@/assets/pics/shelfchart/2.2/2.svg" class="rotate2" /> -->
+              <div class="rotate2 highlight2"><p class="b3">"เบียร์นำเข้าจากต่างประเทศ"</p></div>
             </div>
 
             <p class="b4">
@@ -59,7 +69,10 @@
         <div class="step" data-step-no="3">
           <div class="data">
             <div class="imgtext d-flex">
-              <img class="imgleft animated infinite pulse" src="@/assets/pics/shelfchart/2.3/95.svg" />
+              <img
+                class="imgleft animated infinite pulse"
+                src="@/assets/pics/shelfchart/2.3/95.svg"
+              />
               <div class="text">
                 <p class="b4">ของตลาดเบียร์ ถือครองโดย</p>
                 <p class="b4">
@@ -71,7 +84,7 @@
             <div class="imgtext d-flex mb-5">
               <div class="imgleft"></div>
               <div class="text">
-                <p class="b3 highlight mb-2">บจก.บุญรอดบริวเวอรี่</p>
+                <p class="b3 highlight">บจก.บุญรอดบริวเวอรี่</p>
                 <div class="and d-flex align-items-center">
                   <p class="b1">&</p>
                   <p class="b3 highlight">บมจ.ไทยเบฟเวอเรจ</p>
@@ -80,7 +93,10 @@
             </div>
 
             <div class="imgtext d-flex mb-5">
-              <img class="imgleft animated infinite pulse" src="@/assets/pics/shelfchart/2.3/4.svg" />
+              <img
+                class="imgleft animated infinite pulse"
+                src="@/assets/pics/shelfchart/2.3/4.svg"
+              />
               <div class="text">
                 <p class="b3"><span class="b4">ของ</span> บจก.ไทยเอเชีย</p>
                 <p class="b3">แปซิฟิก บริวเวอรี่</p>
@@ -88,7 +104,10 @@
             </div>
 
             <div class="imgtext d-flex">
-              <img class="imgleft animated infinite pulse" src="@/assets/pics/shelfchart/2.3/1.svg" />
+              <img
+                class="imgleft animated infinite pulse"
+                src="@/assets/pics/shelfchart/2.3/1.svg"
+              />
               <div class="text">
                 <p class="b3">
                   <span class="b4">ที่เหลือคือ</span> ผู้ผลิตคราฟต์เบียร์
@@ -265,6 +284,14 @@ p {
   border: 1px solid black;
   padding: 10px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.highlight2 {
+  color: #DE5850;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-left: 1rem;
 }
 .text .highlight {
   transform: rotate(-1.5deg);

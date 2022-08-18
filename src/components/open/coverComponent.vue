@@ -49,7 +49,7 @@ export default {
 }
 
 .col-7 img {
-  width: 160%;
+  width: 100%;
 }
 
 </style>

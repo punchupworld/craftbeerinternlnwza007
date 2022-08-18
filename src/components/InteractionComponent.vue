@@ -7,6 +7,7 @@
       <book-mark-4></book-mark-4>
       <book-mark-4-1></book-mark-4-1>
       <book-mark-4-2></book-mark-4-2>
+      <random-component></random-component>
 
       <vue-aos animation-class="fadeIn animated">
         <act-1></act-1>
@@ -27,6 +28,7 @@ import BookMark42 from "./bookmark/BookMark4.2.vue";
 import BookMark4 from "./bookmark/BookMark4.vue";
 import Act1 from "./detail/Act1.vue";
 import Act2 from "./detail/Act2.vue";
+import RandomComponent from './interact/RandomComponent.vue';
 
 export default {
   name: "InteractionComponent",
@@ -39,6 +41,7 @@ export default {
     BookMark42,
     Act1,
     Act2,
+    RandomComponent
   },
 };
 </script>

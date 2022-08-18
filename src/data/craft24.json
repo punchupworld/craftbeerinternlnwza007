@@ -1,0 +1,196 @@
+{
+    "beers":[
+        {
+            "id": 1,
+            "name": "ภูเก็ต (Phuket)",
+            "brand": "Phuket Beer",
+            "type": "Premium Lager",
+            "ABV": "5%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนรสคั่วจากมอลต์ โดยมีวัตถุดิบ-พิเศษ คือ ข้าวหอมมะลิของไทย, มอลต์บาร์เลย์ และฮอปส์เยอรมัน"
+        },
+        {
+            "id": 2,
+            "name": "มหานคร (Mahanakhon)",
+            "brand": "Wheat Beer",
+            "type": "Premium Lager",
+            "ABV": "5%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้ และผลไม้โทนส้ม (ซิตรัส) จากฮอปส์ โดยมีวัตถุดิบพิเศษ คือส้มวาเลนเซีย, ลูกเดือย, ข้าวโอ๊ต และเม็ดผักชี"
+        },
+        {
+            "id": 3,
+            "name": "สวัสดี ไอพีเอ(Sawasdee IPA)",
+            "brand": "ผีบอก (Pheebok)",
+            "type": "IPA",
+            "ABV": "5.8%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนดอกไม้ หญ้า และสนจากฮอปส์"
+        },
+        {
+            "id": 4,
+            "name": "คนสวยใจดำ (KhonSuayJaiDum White Stout)",
+            "brand": "ลูกกรุง บริวว์ (Look-krung Brew)",
+            "type": "Stout",
+            "ABV": "7.8%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนเครื่องเทศจากฮอปส์ และโทนกาแฟรวมถึงกลิ่นคั่วจากมอลต์โดยมีวัตถุดิบพิเศษ คือ ผักแพว"
+        },
+        {
+            "id": 5,
+            "name": "เยาวราช เพล เอล (Yaowaraj Pale Ale)",
+            "brand": "โกลเด้นคอยส์ (Golden Coins)",
+            "type": "Pale Ale",
+            "ABV": "6.2%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนเมล็ดข้าวและคาราเมลจากมอลต์"
+        },
+        {
+            "id": 6,
+            "name": "Island Hopper",
+            "brand": "บูทเลก บราเธอร์ (Bootleg Brothers)",
+            "type": "Hoppy lager",
+            "ABV": "5%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้โทนส้ม (ซิตรัส) จากฮอปส์ และเมล็ดข้าวจากมอลต์"
+        },
+        {
+            "id": 7,
+            "name": "A Go-Go",
+            "brand": "บีทบรูวิ่ง (Beat Brewing)",
+            "type": "IPA",
+            "ABV": "5.7%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้ และผลไม้โทนร้อนจากฮอปส์"
+        },
+        {
+            "id": 8,
+            "name": "Bearnana Sun Dried Banana Wit",
+            "brand": "ยอดเบียร์ (YodBeer)",
+            "type": "Wheat beer",
+            "ABV": "4.9%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้จากฮอปส์ โดยมีวัตถุดิบพิเศษ คือ กล้วยเล็บมือนางตากจากจังหวัดชุมพร"
+        },
+        {
+            "id": 9,
+            "name": "Dark Horse Stout",
+            "brand": "เอาท์ลอว์ (Outlaw)",
+            "type": "Stout",
+            "ABV": "7%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนกาแฟและโกโก้จากมอลต์"
+        },
+        {
+            "id": 10,
+            "name": "Kiss Me Deadly Stout",
+            "brand": "บ้านนอกเบียร์ (Bannok Beer)",
+            "type": "Stout",
+            "ABV": "6.4%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้ และผลไม้เมืองร้อนอย่างลิ้นจี่ รวมถึงสนจากฮอปส์"
+        },
+        {
+            "id": 11,
+            "name": "IPPO Pale Ale",
+            "brand": "เทพพนม (Devanom)",
+            "type": "Pale Ale",
+            "ABV": "6.2%",
+            "flavor": "มีรสชาติไปทางผลไม้ ผลไม้เมืองร้อน และผลไม้โทนส้ม(ซิตรัส) เช่น ส้มโอ ส้มเขียวหวานจากฮอปส์ 3 สายพันธุ์"
+        },
+        {
+            "id": 12,
+            "name": "Butterfly Pea Wheat",
+            "brand": "สโตน เฮด (Stone Head)",
+            "type": "Wheat Beer / Belgian Witbier",
+            "ABV": "4.7%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้จากฮอปส์ โดยมีวัตถุดิบพิเศษ คือ ดอกอัญชัญ"
+        },
+        {
+            "id": 13,
+            "name": "Red Truck Red Ale",
+            "brand": "เชียงใหม่ (Chiang Mai Beer)",
+            "type": "Red Ale - American Amber / Red",
+            "ABV": "5%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้จากฮอปส์ และโทนคาราเมลจากมอลต์ "
+        },
+        {
+            "id": 14,
+            "name": "ชาละวัน (Chalawan Pale Ale)",
+            "brand": "ฟูลมูน บริวเวิร์ก (Full Moon Brewwork)",
+            "type": "Pale Ale / American Pale Ale",
+            "ABV": "4.7%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้เขตร้อน ผลไม้โทนส้ม (ซิตรัส) และดอกไม้จากฮอปส์"
+        },
+        {
+            "id": 15,
+            "name": "Hannah Wits",
+            "brand": "D'X Brewerkz",
+            "type": "Wheat Beer",
+            "ABV": "5.5%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้ และสมุนไพรจากฮอปส์"
+        },
+        {
+            "id": 16,
+            "name": "If You Like Pina Coladas",
+            "brand": "ลำซิ่ง (Lamzing)",
+            "type": "Farmhouse Ale - Saison",
+            "ABV": "5.3%",
+            "flavor": "มีโทนกลิ่นและรสชาติ โทนผลไม้เขตร้อนจากฮอปส์โดยมีวัตถุดิบพิเศษ คือ มะพร้าวและสัปปะรด"
+        },
+        {
+            "id": 17,
+            "name": "อโศก (Asoke Pale Ale)",
+            "brand": "ชางวอน เอกซ์เพรส (Changwon Express)",
+            "type": "Pale Ale",
+            "ABV": "4.7%",
+            "flavor": "มีโทนกลิ่นและรสชาติ โทนผลไม้เขตร้อนจากฮอปส์และโทนบิสกิตจากมอลต์"
+        },
+        {
+            "id": 18,
+            "name": "Hyena Howl",
+            "brand": "HYENA HOWL",
+            "type": "Wheat Beer",
+            "ABV": "4.9%",
+            "flavor": "มีโทนกลิ่นและรสชาติโทนผลไม้ และสมุนไพรจากฮอปส์"
+        },
+        {
+            "id": 19,
+            "name": "Galaxy Villa",
+            "brand": "ทริปเปิล เพิร์ล (Triple Pearl)",
+            "type": "Pale Ale / American Pale Ale",
+            "ABV": "5%",
+            "flavor": "มีโทนกลิ่นและรสชาติ โทนผลไม้เขตร้อน ผลไม้โทนส้ม (ซิตรัส) และสนจากฮอปส์"
+        },
+        {
+            "id": 20,
+            "name": "Wheat off the Wall",
+            "brand": "แซนด์พอร์ต (Sandport)",
+            "type": "Wheat Beer",
+            "ABV": "5.5%",
+            "flavor": "มีโทนกลิ่นและรสชาติ โทนผลไม้ และผลไม้เขตร้อนจากฮอปส์"
+        },
+        {
+            "id": 21,
+            "name": "Pilsner",
+            "brand": "แฮปปี้นิวเบียร์ (Happy New Beer)",
+            "type": "Pilsner",
+            "ABV": "5%",
+            "flavor": "มีโทนกลิ่นและรสชาติ โทนเมล็ดข้าวจากมอลต์"
+        },
+        {
+            "id": 22,
+            "name": "LIBERTY 1",
+            "brand": "สเปซคราฟต์ (SpaceCraft)",
+            "type": "Wheat Beer",
+            "ABV": "5.5%",
+            "flavor": "มีโทนกลิ่นและรสชาติ โทนผลไม้โทนส้ม (ซิตรัส) จากฮอปส์"
+        },
+        {
+            "id": 23,
+            "name": "YAKSA Pale Ale",
+            "brand": "ยักษา บริวเวอรี่ (YAKSA Brewery)",
+            "type": "Pale Ale",
+            "ABV": "5.5%",
+            "flavor": "มีโทนกลิ่นและรสชาติ โทนผลไม้เขตร้อน คือ สับปะรด จากฮอปส์ และโทนเมล็ดข้าวจากมอลต์"
+        },
+        {
+            "id": 24,
+            "name": "Animal Trainer",
+            "brand": "เดอะเซอร์คัส (The Circus)",
+            "type": "Wheat Beer",
+            "ABV": "5.6%",
+            "flavor": "มีโทนกลิ่นและรสชาติ โทนผลไม้โทนส้ม (ซิตรัส) และเครื่องเทศจากฮอปส์"
+        }
+    ]
+}
