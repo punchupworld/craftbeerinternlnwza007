@@ -5,7 +5,7 @@
       <interaction-component></interaction-component>
       <problem-component v-if="$store.state.count"></problem-component>
       <outtro-component v-if="$store.state.count"></outtro-component>
-    </section> 
+    </section>
   </div>
 </template>
 
@@ -13,7 +13,7 @@
 import InteractionComponent from "./components/InteractionComponent.vue";
 import IntroComponent from "./components/IntroComponent.vue";
 import OuttroComponent from "./components/OuttroComponent.vue";
-import ProblemComponent from './components/problemComponent.vue';
+import ProblemComponent from "./components/problemComponent.vue";
 
 export default {
   components: {
@@ -36,20 +36,8 @@ export default {
 h1,
 h2,
 h3,
-h4 { 
-  font-family: "Kanit", sans-serif;
-}
-h1 {
-  font-size: 70px !important;
-}
-h2 {
-  font-size: 60px !important;
-}
-h3 {
-  font-size: 50px !important;
-}
 h4 {
-  font-size: 40px !important;
+  font-family: "Kanit", sans-serif;
 }
 .b1,
 .b2,
