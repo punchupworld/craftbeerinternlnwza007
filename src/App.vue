@@ -3,9 +3,9 @@
     <section>
       <intro-component></intro-component>
       <interaction-component></interaction-component>
-      <problem-component></problem-component>
-      <outtro-component></outtro-component>
-    </section>
+      <problem-component v-if="$store.state.count"></problem-component>
+      <outtro-component v-if="$store.state.count"></outtro-component>
+    </section> 
   </div>
 </template>
 
@@ -36,20 +36,20 @@ export default {
 h1,
 h2,
 h3,
-h4 {
+h4 { 
   font-family: "Kanit", sans-serif;
 }
 h1 {
-  font-size: 70px;
+  font-size: 70px !important;
 }
 h2 {
-  font-size: 60px;
+  font-size: 60px !important;
 }
 h3 {
-  font-size: 50px;
+  font-size: 50px !important;
 }
 h4 {
-  font-size: 40px;
+  font-size: 40px !important;
 }
 .b1,
 .b2,

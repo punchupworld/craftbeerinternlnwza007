@@ -10,6 +10,9 @@ import VAnimateCss from 'v-animate-css';
 import * as VueAos from 'vue-aos'
 import 'animate.css'
 
+import store from './store'
+
+
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
@@ -20,4 +23,5 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  store
 }).$mount('#app')

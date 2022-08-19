@@ -17,7 +17,8 @@
     "v-animate-css": "^0.0.5",
     "vue": "^2.6.11",
     "vue-aos": "^2.3.0",
-    "vue-scrollama": "^2.0.6"
+    "vue-scrollama": "^2.0.6",
+    "vuex": "2.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",

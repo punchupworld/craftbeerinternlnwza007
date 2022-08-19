@@ -9,10 +9,10 @@
       <book-mark-4-2></book-mark-4-2>
       <random-component></random-component>
 
-      <vue-aos animation-class="fadeIn animated">
+      <vue-aos animation-class="fadeIn animated" v-if="$store.state.count">
         <act-1></act-1>
       </vue-aos>
-      <vue-aos animation-class="zoomIn animated">
+      <vue-aos animation-class="zoomIn animated" v-if="$store.state.count">
         <act-2></act-2>
       </vue-aos>
     </section>

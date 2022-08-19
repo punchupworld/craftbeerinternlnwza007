@@ -8663,6 +8663,11 @@ vue@^2.6.11:
     "@vue/compiler-sfc" "2.7.8"
     csstype "^3.1.0"
 
+vuex@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-2.0.0.tgz#26befa44de220f009e432d1027487bff29571cee"
+  integrity sha512-dAVUbZthEm5xFVDp2aYHpxfoILj2vHWRNRLlbeCNrwyrOwSQ/wIl3L0J1C4TcdUWHpQzU/VejqdvRcIJkLblVg==
+
 warning@^4.0.1:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
