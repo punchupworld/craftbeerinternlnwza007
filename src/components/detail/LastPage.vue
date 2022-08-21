@@ -1,57 +1,67 @@
 <template>
   <div>
-    <div class="bookmark-bg container-fluid pb-5 pt-5">
-        <div class="container">
-                  <div class="header text-center pb-5">
-        <h1>PU Internship</h1>
-        <h3>2022</h3>
-      </div>
+    <div class="bookmark-bg container-fluid pb-4 pt-4">
+      <div class="container">
+        <div class="text-center pb-4">
+          <img src="@/assets/pics/profile/topic.svg" alt="" class="header" />
+        </div>
 
-      <div class="row">
-        <div class="col-4 text-center">
-          <div class="profile">
-            <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ZhplzyJ9" alt="" />
-            <p class="b3 position">Data Storyteller</p>
+        <div class="frame row">
+          <div class="col-4 text-center">
+            <div class="profile mb-4 d-flex justify-content-center">
+              <img src="@/assets/pics/profile/soup.svg" />
+              <p class="b5 position">Data Storyteller</p>
+            </div>
+            <div class="detail">
+              <p class="b5">ธัญมน วิวัฒนภูษิต ( ซุป )</p>
+              <p class="b6">
+                คณะอักษรศาสตร์ <br />
+                เอกเทคโนโลยีภาษาและสารสนเทศ <br />
+                จุฬาลงกรณ์มหาวิทยาลัย
+              </p>
+            </div>
           </div>
-          <div class="detail">
-            <p class="b4">ธัญมน วิวัฒนภูษิต (ซุป)</p>
-            <p class="b5">
-              คณะอักษรศาสตร์ <br />
-              เอกเทคโนโลยีภาษาและสารสนเทศ <br />
-              จุฬาลงกรณ์มหาวิทยาลัย
-            </p>
+          <div class="col-4 text-center">
+            <div class="profile mb-4 d-flex justify-content-center">
+              <img src="@/assets/pics/profile/ploy.png" />
+              <p class="b5 position">Digital Designer</p>
+            </div>
+            <div class="detail">
+              <p class="b5">บัณฑิตา สมประเสริฐศักดิ์ ( พลอย )</p>
+              <p class="b6">
+                คณะศิลปกรรมศาสตร์ <br />
+                ภาควิชานฤมิตศิลป์ วิชาเอกเรขศิลป์ <br />
+                จุฬาลงกรณ์มหาวิทยาลัย
+              </p>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="profile mb-4 d-flex justify-content-center">
+              <img src="@/assets/pics/profile/wit.png" />
+              <p class="b5 position">Frontend Developer</p>
+            </div>
+            <div class="detail">
+              <p class="b5">วชิรวิทย์ ขันติพันธุกุล ( วิทย์ )</p>
+              <p class="b6">
+                คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี <br />
+                ภาควิชาวิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย<br />
+                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-4 text-center">
-          <div class="profile">
-            <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ZhplzyJ9" alt="" />
-            <p class="b3 position">Digital Designer</p>
-          </div>
-          <div class="detail">
-            <p class="b4">บัณฑิตา สมประเสริฐศักดิ์ (พลอย)</p>
-            <p class="b5">
-              คณะอักษรศาสตร์ <br />
-              เอกเทคโนโลยีภาษาและสารสนเทศ <br />
-              จุฬาลงกรณ์มหาวิทยาลัย
-            </p>
-          </div>
-        </div>
-        <div class="col-4 text-center">
-          <div class="profile">
-            <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ZhplzyJ9" alt="" />
-            <p class="b3 position">Frontend Developer</p>
-          </div>
-          <div class="detail">
-            <p class="b4">วชิรวิทย์ ขันติพันธุกุล (วิทย์)</p>
-            <p class="b5">
-              คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี <br />
-              ภาควิชาวิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย<br />
-              มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-            </p>
-          </div>
+
+        <div class="text-center m-2">
+          <img
+            src="@/assets/pics/profile/restart.svg"
+            alt=""
+            class="footer mb-2"
+          />
+          <div class="b6">BACK TO HOME</div>
+          <div class="b6">กลับสู่หน้าแรก</div>
+          <img src="@/assets/pics/profile/PU.svg" alt="" class="PU mt-5" />
         </div>
       </div>
-        </div>
     </div>
   </div>
 </template>
@@ -66,17 +76,35 @@ export default {
 .bookmark-bg {
   background: #f8ef8f;
 }
-/* .profile{
-    position: relative;
+.profile {
+  position: relative;
 }
-.profile .position{
-    position: absolute;
-} */
+.profile .position {
+  background: white;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  bottom: 0;
+}
 .profile img {
-  width: 80%;
+  width: 70%;
 }
-.header h1,.header h3{
-    background: white;
-    border: 1px solid black;
+.header {
+  width: 30%;
+}
+.footer {
+  width: 4%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.footer:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+.PU {
+  width: 15%;
+}
+.frame {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 </style>
