@@ -18,7 +18,7 @@
       </div>
 
       <Scrollama @step-enter="testScrollama" class="main__scrollama">
-        <div class="step" data-step-no="1">
+        <div class="step justify-content-center" data-step-no="1">
           <div class="data">
             <vue-aos animation-class="bounceInRight animated">
               <img src="@/assets/pics/shelfchart/2.1/topic.svg" alt=""

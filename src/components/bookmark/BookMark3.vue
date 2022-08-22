@@ -3,10 +3,7 @@
     <div
       class="bookmark-bg2 container-fluid d-flex justify-content-center align-items-center"
     >
-      <img src="@/assets/pics/frame3/3.7/background.svg"/>
-      <div class="text-right">
-        <img src="/assets/pics/frame3/3.7/text.svg" />
-      </div>
+      <img src="/assets/pics/frame3/3.7/text.svg" />
     </div>
   </div>
 </template>
@@ -19,16 +16,12 @@ export default {
 
 <style scoped>
 .bookmark-bg2 {
-  padding: 0;
+  background-image: url("~@/assets/pics/frame3/3.7/background.svg");
   width: 100vw;
-  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bookmark-bg2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.text-right {
-  position: absolute;
 }
 </style>

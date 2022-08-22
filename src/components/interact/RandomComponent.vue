@@ -9,9 +9,10 @@
     <div
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
       v-if="$store.state.count"
+      id="test"
     >
       <div class="container d-flex flex-column align-items-center">
-        <div id="test" class="result row" v-if="list.length > 0">
+        <div class="result row" v-if="list.length > 0">
           <div class="bgwhite"></div>
 
           <div
@@ -44,7 +45,6 @@
           <h4>พักเสร็จแล้ว</h4>
           <h3>ไปต่อกันเลย !</h3>
         </div>
-
       </div>
     </div>
   </div>
@@ -82,12 +82,14 @@ export default {
 
 <style scoped>
 .bookmark-bg {
-  background-color: tomato;
+  background-image: url("~@/assets/pics/frame3/3.3/bg_game.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bgwhite {
   position: absolute;
   width: 95%;
-  height: 70%;
+  height: 80%;
   background: white;
   border: solid 2px black;
 

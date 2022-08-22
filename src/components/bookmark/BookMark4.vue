@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
 .bordertext {
-  background: yellow;
+  background: #F4CC2D;
   width: fit-content;
 }
 .span2 {

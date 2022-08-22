@@ -3,7 +3,7 @@
     <div
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
     >
-      <div class="container text-center">
+      <div class="container text-center cover">
         <img src="@/assets/pics/frame4/4.2/topic.svg" alt="" />
       </div>
     </div>
@@ -41,5 +41,7 @@ export default {
 .chart{
   width: 50%;
 }
-
+.cover{
+  width: 60%;
+}
 </style>

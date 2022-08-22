@@ -1,32 +1,37 @@
 <template>
   <div>
-    <section>
+    <div class="bgimage">
+      <img src="@/assets/pics/frame5/5.3/bg.svg" alt="" />
       <div
-        class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
+        class="text text-center d-flex justify-content-center align-items-center"
       >
-        <div class="text-center">
-          <h2>รู้อย่างนี้แล้วมาร่วมกันจับตา</h2>
-          <h2>พ.ร.บ. สุราก้าวหน้าไม่ให้ถูกปัดตกในวาระอื่นๆ</h2>
+        <div class="content">
+          <div class="topic1 d-flex justify-content-center mt-4">
+            <img src="@/assets/pics/frame5/5.3/eyes2.svg" />
+            <h3 class="m-2 mb-0 mt-0">รู้อย่างนี้แล้วมาร่วมกันจับตา</h3>
+            <img src="@/assets/pics/frame5/5.3/eyes1.svg" />
+          </div>
+          <h3>พ.ร.บ. สุราก้าวหน้าไม่ให้ถูกปัดตกในวาระอื่นๆ</h3>
 
-          <br />
-          <br />
+          <div class="topic2 d-flex flex-column p-5">
+            <h2>มาร่วมกันสนับสนุนวงการคราฟต์เบียร์ไทย</h2>
+            <h2>เพื่อทางเลือกในรสชาติที่มากกว่า</h2>
+            <h2>และราคาที่จับต้องได้</h2>
+          </div>
 
-          <h2>มาร่วมกันสนับสนุนวงการคราฟต์เบียร์ไทย</h2>
-          <h2>เพื่อทางเลือกในรสชาติที่มากกว่าและราคาที่จับต้องได้</h2>
-          <h2>เพราะหนทางนี้อีกยาวไกล</h2>
+          <div class="topic3 pb-1 d-flex flex-column">
+            <h3>"เพราะหนทางนี้อีกยาวไกล"</h3>
+            <p class="b4 mt-5">แชร์ให้เพื่อนมาสำรวจ</p>
+          </div>
 
-          <br />
-          <br />
-
-          <p class="b2">แชร์ให้เพื่อนมาสำรวจ</p>
           <div class="d-flex justify-content-center">
-              <img class="icon" src="@/assets/pics/facebook_icon.svg" alt="">
-              <img class="icon" src="@/assets/pics/twitter_icon.svg" alt="">
-              <img class="icon" src="@/assets/pics/line_icon.svg" alt="">
+            <img class="icon" src="@/assets/pics/facebook_icon.svg" alt="" />
+            <img class="icon" src="@/assets/pics/twitter_icon.svg" alt="" />
+            <img class="icon" src="@/assets/pics/line_icon.svg" alt="" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
@@ -37,11 +42,43 @@ export default {
 </script>
 
 <style scoped>
-.icon{
-    width: 6rem;
-    cursor: pointer;
+.bgimage {
+  position: relative;
 }
-.icon:hover{
-    transform: scale(1.1);
+.topic1 img {
+  width: 3rem;
+}
+.topic2 h2 {
+  background-color: #f4cc2d;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+}
+.topic3 h3{
+  color: #DE5850;
+}
+.text {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.icon {
+  width: 6rem;
+  cursor: pointer;
+}
+.icon:hover {
+  transform: scale(1.1);
+}
+.text {
+  position: absolute;
+}
+.b4 {
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: fit-content;
+  margin: auto;
 }
 </style>
