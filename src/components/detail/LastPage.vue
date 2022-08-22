@@ -24,7 +24,7 @@
           <div class="col-4 text-center">
             <div class="profile mb-4 d-flex justify-content-center">
               <img src="@/assets/pics/profile/ploy.png" />
-              <p class="b5 position">Digital Designer</p>
+              <p class="b5 position2">Digital Designer</p>
             </div>
             <div class="detail">
               <p class="b5">บัณฑิตา สมประเสริฐศักดิ์ ( พลอย )</p>
@@ -79,12 +79,19 @@ export default {
 .profile {
   position: relative;
 }
-.profile .position {
+.profile .position,
+.profile .position2 {
   background: white;
   border: 1px solid black;
   padding: 0.5rem 2rem;
   position: absolute;
   bottom: 0;
+}
+.profile .position{
+  transform: rotate(-3deg);
+}
+.profile .position2{
+  transform: rotate(3deg);
 }
 .profile img {
   width: 70%;

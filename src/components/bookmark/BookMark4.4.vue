@@ -1,9 +1,9 @@
 <template>
   <div>
-      <!-- part1 -->
+    <!-- part1 -->
     <div class="bookmark-bg2 container-fluid">
-      <div class="container p-5 text-center">
-          <h1>แถมไทยมีจำนวนโรงผลิตเบียร์มากกว่า</h1>
+      <div class="container p-4 text-center">
+        <h1>แถมไทยมีจำนวนโรงผลิตเบียร์มากกว่า</h1>
       </div>
     </div>
 
@@ -13,7 +13,7 @@
 
     <!-- part3 -->
     <div class="bookmark-bg2 container-fluid">
-      <div class="container p-5">
+      <div class="container p-4">
         <div class="data text-center">
           <img src="@/assets/pics/frame4/4.6/top.svg" />
         </div>
@@ -24,9 +24,12 @@
             <h3 class="mb-4">และต่างประเทศสามารถแข่งขันกันได้อย่างเป็นธรรม</h3>
           </div>
 
-          <div class="text-main m-auto">
-            <h1 class="mt-4">เงื่อนไขด้านการธุรกิจที่เปิดกว้างให้ผู้ผลิตเบียร์ทั้งใน</h1>
-            <h1>และต่างประเทศสามารถแข่งขันกันได้อย่างเป็นธรรม</h1>
+          <div class="text-main text-center">
+            <h1 class="mt-4 mb-1">
+              เวียดนามจึงสามารถผลิตคราฟต์เบียร์ภายในประเทศ
+            </h1>
+            <h1 class="mb-1">ได้อย่างมีอิสระกว่าไทยและยังเป็นฐานการผลิต</h1>
+            <h1>เพื่อส่งออกไปยังต่างประเทศ</h1>
           </div>
         </div>
 
@@ -58,6 +61,6 @@ export default {
   color: black;
 }
 .data {
-    padding: 5rem;
+  padding: 5rem;
 }
 </style>

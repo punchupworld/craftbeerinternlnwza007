@@ -13,10 +13,11 @@
             <h1 class="m-2">คราฟต์เบียร์ไทยได้เข้าใกล้</h1>
             <h1 class="m-2">ความเปลี่ยนแปลงมากกว่าที่เคย</h1>
           </div>
-
-          <div class="hand m-auto">
-            <img src="@/assets/pics/frame5/5/hands.svg" alt="" />
-          </div>
+          <vue-aos animation-class="slideInUp animated">
+            <div class="hand m-auto">
+              <img src="@/assets/pics/frame5/5/hands.svg" alt="" />
+            </div>
+          </vue-aos>
         </div>
       </div>
 
@@ -38,48 +39,57 @@
           </div>
 
           <div class="part3 text-center m-auto">
-            <div class="bordertext">
-              <p class="b4">
-                เน้นที่การ<span>แก้ไขพระราชบัญญัติภาษีสรรพสามิต พ.ศ. 2560</span
-                ><br />
-                มาตรา 153 เพื่อเปิดให้ประชาชนสามารถผลิตสุราในครัวเรือนได้<br />
-                แต่ถ้าประชาชนต้องการผลิตเพื่อการค้าต้องยื่นขออนุญาตและ<br />
-                การออกใบอนุญาตตามขั้นตอนตามที่กำหนดในกฎกระทรวง<br />
-              </p>
-              <div
-                class="circle d-flex justify-content-center align-items-center b4"
-              >
-                1
+            <vue-aos animation-class="fadeInUp animated">
+              <div class="bordertext">
+                <p class="b4">
+                  เน้นที่การ<span
+                    >แก้ไขพระราชบัญญัติภาษีสรรพสามิต พ.ศ. 2560</span
+                  ><br />
+                  มาตรา 153 เพื่อเปิดให้ประชาชนสามารถผลิตสุราในครัวเรือนได้<br />
+                  แต่ถ้าประชาชนต้องการผลิตเพื่อการค้าต้องยื่นขออนุญาตและ<br />
+                  การออกใบอนุญาตตามขั้นตอนตามที่กำหนดในกฎกระทรวง<br />
+                </p>
+                <div
+                  class="circle d-flex justify-content-center align-items-center b4"
+                >
+                  1
+                </div>
               </div>
-            </div>
+            </vue-aos>
 
-            <div class="bordertext">
-              <p class="b4">
-                ยกเลิกการกำหนดคุณสมบัติในเรื่องกำลังการผลิต <br />
-                ทั้งกำลังแรงคน และกำลังเครื่องจักร
-              </p>
-              <div
-                class="circle d-flex justify-content-center align-items-center b4"
-              >
-                2
+            <vue-aos animation-class="fadeInUp animated">
+              <div class="bordertext">
+                <p class="b4">
+                  ยกเลิกการกำหนดคุณสมบัติในเรื่องกำลังการผลิต <br />
+                  ทั้งกำลังแรงคน และกำลังเครื่องจักร
+                </p>
+                <div
+                  class="circle d-flex justify-content-center align-items-center b4"
+                >
+                  2
+                </div>
               </div>
-            </div>
+            </vue-aos>
 
-            <div class="bordertext">
-              <p class="b4">
-                ไม่กำหนดทุนจดทะเบียนขั้นต่ำในการก่อตั้งบริษัทเบียร์
-              </p>
-              <div
-                class="circle d-flex justify-content-center align-items-center b4"
-              >
-                3
+            <vue-aos animation-class="fadeInUp animated">
+              <div class="bordertext">
+                <p class="b4">
+                  ไม่กำหนดทุนจดทะเบียนขั้นต่ำในการก่อตั้งบริษัทเบียร์
+                </p>
+                <div
+                  class="circle d-flex justify-content-center align-items-center b4"
+                >
+                  3
+                </div>
               </div>
-            </div>
+            </vue-aos>
           </div>
         </div>
       </div>
 
-      <div class="bookmark-bg"></div>
+      <div
+        class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
+      ></div>
     </section>
   </div>
 </template>
@@ -96,7 +106,8 @@ export default {
 .bookmark-bg {
   background-color: #f8ef8f;
 }
-.bookmark-bg2 {
+.bookmark-bg2,
+.bookmark-bg {
   padding-top: 5rem;
   border: 1px solid;
 }
@@ -153,11 +164,11 @@ export default {
   left: 0;
   background-color: white;
 }
-.text-color{
-  background: #F4CC2D;
+.text-color {
+  background: #f4cc2d;
   width: fit-content;
 }
-span{
-  background: #F8EF8F;
+span {
+  background: #f8ef8f;
 }
 </style>

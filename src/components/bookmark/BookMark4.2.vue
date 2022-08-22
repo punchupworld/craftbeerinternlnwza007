@@ -4,15 +4,17 @@
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
     >
       <div class="container text-center">
-        <div class="topic">
-          <img src="@/assets/pics/frame3/3.10/text.svg" class="m-4" />
-          <p class="b5">
-            การที่ผู้ผลิตรายย่อยมีพื้นที่ในตลาดเบียร์ของประเทศ
-            ทำให้ประชาชนสามารถมีตัวเลือกด้านรสชาติที่หลากหลาย <br />
-            และได้ดื่มเบียร์ที่มีคุณภาพ
-            อีกทั้งความหลากหลายของเบียร์ยังนำมาซึ่งโอกาสทางเศรษฐกิจ เช่น
-          </p>
-        </div>
+        <vue-aos animation-class="slideInUp animated">
+          <div class="topic">
+            <img src="@/assets/pics/frame3/3.10/text.svg" class="m-4" />
+            <p class="b5">
+              การที่ผู้ผลิตรายย่อยมีพื้นที่ในตลาดเบียร์ของประเทศ
+              ทำให้ประชาชนสามารถมีตัวเลือกด้านรสชาติที่หลากหลาย <br />
+              และได้ดื่มเบียร์ที่มีคุณภาพ
+              อีกทั้งความหลากหลายของเบียร์ยังนำมาซึ่งโอกาสทางเศรษฐกิจ เช่น
+            </p>
+          </div>
+        </vue-aos>
 
         <div class="three row">
           <div class="col-4 p-5">
@@ -52,7 +54,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -74,5 +75,4 @@ export default {
   border: 1px solid black;
   padding: 1rem;
 }
-
 </style>

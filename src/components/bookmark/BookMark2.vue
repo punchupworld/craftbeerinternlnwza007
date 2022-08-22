@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bookmark-bg container-fluid d-flex justify-content-center">
+    <div class="bookmark-bg d-flex justify-content-center">
       <div class="all d-flex align-items-center">
         <div class="left d-flex justify-content-center align-items-center">
           <img src="@/assets/pics/frame3/3.2/topic.svg" alt="">

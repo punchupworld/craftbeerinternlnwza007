@@ -14,22 +14,29 @@
       <div class="container d-flex flex-column align-items-center">
         <div class="result row" v-if="list.length > 0">
           <div class="bgwhite"></div>
+          <div class="abv">
+            <p class="b6">
+              *ABV ย่อมาจาก Alcohol By Volume หรือ ปริมาณแอลกอฮอล์
+            </p>
+          </div>
 
           <div
             class="imgframe col-5 d-flex align-items-center justify-content-center"
           >
-            <img :src="require(`@/assets/pics/beer24/${list[0].imgpath}`)" />
+            <vue-aos animation-class="zoomInUp animated">
+              <img :src="require(`@/assets/pics/beer24/${list[0].imgpath}`)" />
+            </vue-aos>
           </div>
           <div
             class="dataframe col-6 d-flex align-items-center justify-content-center pb-2"
           >
             <div>
-              <h2 class="pt-2 pb-4">{{ list[0].name }}</h2>
+              <h1 class="name pt-2 pb-4">{{ list[0].name }}</h1>
               <p class="b4">
                 <span class="bold">แบรนด์ : </span>{{ list[0].brand }}
               </p>
               <p class="b4">
-                <span class="bold">ประเภท :</span>{{ list[0].type }}
+                <span class="bold">ประเภท : </span>{{ list[0].type }}
               </p>
               <p class="b4">
                 <span class="bold">ABV : </span>{{ list[0].abv }}
@@ -100,6 +107,15 @@ export default {
   left: 0;
   right: 0;
 }
+.abv{
+  background: white;
+  border: 1px solid black;
+  padding: .5rem;
+  position: absolute;
+  bottom: 0;
+  width: fit-content;
+  right: 0;
+}
 .result {
   position: relative;
   width: 70%;
@@ -115,5 +131,8 @@ export default {
 .imgframe,
 .dataframe {
   z-index: 1;
+}
+.name {
+  color: #de5850;
 }
 </style>

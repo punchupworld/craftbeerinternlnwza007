@@ -1,14 +1,21 @@
 <template>
   <div>
     <div
-      class="bookmark-bg2 container-fluid d-flex justify-content-center align-items-center"
+      class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
     >
-      <div class="text-center">
-        <h2>จะดีกว่าไหมถ้าเราสามารถผลิตคราฟต์เบียร์ได้เอง</h2>
-        <h2>นอกจากจะได้ราคาคราฟต์เบียร์ที่ถูกลงแล้ว </h2>
-        <h2>เม็ดเงินยังกระจายไปถึง SME ที่เกี่ยวข้องกับคราฟต์เบียร์</h2>
-        <h2>ตลอดจนถึงเกษตรกรอีกทั้งยังสร้างงาน</h2>
-        <h2>สร้างรายได้ให้กับอาชีพที่เกี่ยวข้อง</h2>
+      <div class="text text-center">
+        <h3>จะดีกว่าไหม...</h3>
+        <div class="highlight d-flex flex-column">
+          <h1>ถ้าเราสามารถผลิตคราฟต์เบียร์ได้เอง</h1>
+        </div>
+        <div class="icon">
+          <img src="@/assets/pics/frame4/4.8/emoji.svg" alt="">
+        </div>
+        <h3>นอกจากจะได้ราคาคราฟต์เบียร์ที่ถูกลงแล้ว</h3>
+        <h3>เม็ดเงินยังกระจายไปถึง SME ที่เกี่ยวข้องกับคราฟต์เบียร์</h3>
+        <h3>
+          ตลอดจนถึงเกษตรกรอีกทั้งยังสร้างงาน สร้างรายได้ให้กับอาชีพที่เกี่ยวข้อง
+        </h3>
       </div>
     </div>
   </div>
@@ -21,12 +28,24 @@ export default {
 </script>
 
 <style scoped>
-.bookmark-bg2{
-  width: 100vw;
-  height: 100vh;
-  background-color: #2C2828;
+.bookmark-bg {
+  background-image: url("~@/assets/pics/frame4/4.8/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.bookmark-bg2 .text-center h2{
-  color: #FFFFFF;
+.bookmark-bg2 .text-center h2 {
+  color: #ffffff;
+}
+.text h3{
+  color: white;
+}
+.highlight{
+  width: fit-content;
+  background-color: #f4cc2d;
+  margin: auto;
+}
+.icon img{
+  width: 5rem;
+  margin: 4rem;
 }
 </style>
