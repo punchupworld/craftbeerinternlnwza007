@@ -1,6 +1,23 @@
 <template>
   <div>
     <div class="firstpage bookmark-bg">
+      <div
+        class="disclaimer d-flex justify-content-center align-items-center"
+        v-if="toggle == true"
+      >
+        <vue-aos animation-class="fadeInUp animated">
+          <div class="imgdis">
+            <div
+              class="close-button d-flex justify-content-center align-items-center b2"
+              @click="closePopup"
+            >
+              X
+            </div>
+            <img src="@/assets/pics/cover/disclaimer.svg" alt="" />
+          </div>
+        </vue-aos>
+      </div>
+
       <div class="text-center p-4">
         <p class="b5">
           *ผลงานชิ้นนี้เหมาะกับ <br />
@@ -65,7 +82,14 @@ import "boxicons";
 export default {
   name: "coverComponent",
   data() {
-    return {};
+    return {
+      toggle: true,
+    };
+  },
+  methods: {
+    closePopup() {
+      this.toggle = !this.toggle;
+    },
   },
 };
 </script>
@@ -86,15 +110,17 @@ export default {
 }
 .firstpage {
   position: relative;
+  overflow: hidden;
 }
 .cart {
   width: 100%;
-  height: 40%;
+  height: 50%;
   position: absolute;
   bottom: 0;
+  transform: translateY(30%);
 }
 .img-slider {
-  width: 80%;
+  width: 90%;
   height: 100%;
   position: relative;
 }
@@ -111,5 +137,32 @@ export default {
 }
 .textslide {
   color: #949494;
+}
+.disclaimer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.imgdis {
+  position: relative;
+}
+.close-button {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  top: 0;
+  right: 0;
+  border: 2px solid #de5850;
+  color: #de5850;
+  border-radius: 50%;
+  transform: translate(-20px, 5px);
+  cursor: pointer;
+}
+.close-button:hover {
+  background: #de5850;
+  color: white;
 }
 </style>

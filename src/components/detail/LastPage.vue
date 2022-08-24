@@ -13,7 +13,7 @@
               <p class="b5 position">Data Storyteller</p>
             </div>
             <div class="detail">
-              <p class="b5">ธัญมน วิวัฒนภูษิต ( ซุป )</p>
+              <p class="b4">ธัญมน วิวัฒนภูษิต ( ซุป )</p>
               <p class="b6">
                 คณะอักษรศาสตร์ <br />
                 เอกเทคโนโลยีภาษาและสารสนเทศ <br />
@@ -27,7 +27,7 @@
               <p class="b5 position2">Digital Designer</p>
             </div>
             <div class="detail">
-              <p class="b5">บัณฑิตา สมประเสริฐศักดิ์ ( พลอย )</p>
+              <p class="b4">บัณฑิตา สมประเสริฐศักดิ์ ( พลอย )</p>
               <p class="b6">
                 คณะศิลปกรรมศาสตร์ <br />
                 ภาควิชานฤมิตศิลป์ วิชาเอกเรขศิลป์ <br />
@@ -38,10 +38,10 @@
           <div class="col-4 text-center">
             <div class="profile mb-4 d-flex justify-content-center">
               <img src="@/assets/pics/profile/wit.png" />
-              <p class="b5 position">Frontend Developer</p>
+              <p class="b5 position">Web Developer</p>
             </div>
             <div class="detail">
-              <p class="b5">วชิรวิทย์ ขันติพันธุกุล ( วิทย์ )</p>
+              <p class="b4">วชิรวิทย์ ขันติพันธุกุล ( วิทย์ )</p>
               <p class="b6">
                 คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี <br />
                 ภาควิชาวิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย<br />
@@ -88,10 +88,10 @@ export default {
   bottom: 0;
 }
 .profile .position{
-  transform: rotate(-3deg);
+  transform: rotate(-3deg) translateY(60%);
 }
 .profile .position2{
-  transform: rotate(3deg);
+  transform: rotate(3deg) translateY(60%);
 }
 .profile img {
   width: 70%;

@@ -26,9 +26,11 @@
         </div>
         <p class="grey b4 m-2">วางเมาส์ที่รูปเพื่อดูรายละเอียด</p>
 
-        <div class="imgchoose m-3">
-          <img src="" alt="" />
+        <div class="imgchoose m-auto">
+          <!-- <img src="@/assets/pics/compare/2/main.svg" alt="" /> -->
+          <second-svg></second-svg>
         </div>
+
         <h3>รู้จักกับคราฟต์เบียร์มากขึ้นแล้วใช่ไหม</h3>
         <h1>งั้นไปต่อกันเลย !</h1>
       </div>
@@ -45,7 +47,12 @@
 </template>
 
 <script>
+import SecondSvg from '../svgimage/SecondSvg.vue';
+
+
+
 export default {
+  components: { SecondSvg },
   name: "BookMark1",
   data() {
     return {
@@ -73,5 +80,8 @@ span {
 }
 .grey {
   color: #949494;
+}
+.imgchoose{
+  width: 60%;
 }
 </style>

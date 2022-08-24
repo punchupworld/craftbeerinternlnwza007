@@ -41,7 +41,7 @@
           <div class="part3 text-center m-auto">
             <vue-aos animation-class="fadeInUp animated">
               <div class="bordertext">
-                <p class="b4">
+                <p class="edit b4">
                   เน้นที่การ<span
                     >แก้ไขพระราชบัญญัติภาษีสรรพสามิต พ.ศ. 2560</span
                   ><br />
@@ -59,7 +59,7 @@
 
             <vue-aos animation-class="fadeInUp animated">
               <div class="bordertext">
-                <p class="b4">
+                <p class="edit b4">
                   ยกเลิกการกำหนดคุณสมบัติในเรื่องกำลังการผลิต <br />
                   ทั้งกำลังแรงคน และกำลังเครื่องจักร
                 </p>
@@ -73,7 +73,7 @@
 
             <vue-aos animation-class="fadeInUp animated">
               <div class="bordertext">
-                <p class="b4">
+                <p class="edit b4">
                   ไม่กำหนดทุนจดทะเบียนขั้นต่ำในการก่อตั้งบริษัทเบียร์
                 </p>
                 <div
@@ -109,11 +109,9 @@ export default {
 .bookmark-bg2,
 .bookmark-bg {
   padding-top: 5rem;
-  border: 1px solid;
 }
 .bookmark-bg3 {
   padding: 5rem;
-  border: 1px solid;
 }
 
 .t-black {
@@ -136,7 +134,6 @@ export default {
   padding: 3rem;
 }
 .hand {
-  border: 1px solid;
   width: 70%;
 }
 
@@ -160,8 +157,9 @@ export default {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  top: 0;
+  top: 20px;
   left: 0;
+  transform: translateX(-50%);
   background-color: white;
 }
 .text-color {
@@ -170,5 +168,8 @@ export default {
 }
 span {
   background: #f8ef8f;
+}
+.edit{
+  margin-bottom: 0;
 }
 </style>
