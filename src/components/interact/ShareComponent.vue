@@ -25,8 +25,8 @@
           </div>
 
           <div class="d-flex justify-content-center">
-            <img class="icon" src="@/assets/pics/facebook_icon.svg" alt="" />
-            <img class="icon" src="@/assets/pics/twitter_icon.svg" alt="" />
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://punchupworld.github.io/craftbeerinternlnwza007/" target="_blank"><img class="icon" src="@/assets/pics/facebook_icon.svg" alt="" /></a>
+            <a href="https://twitter.com/intent/tweet?url=https://punchupworld.github.io/craftbeerinternlnwza007/" target="_blank"><img class="icon" src="@/assets/pics/twitter_icon.svg" alt="" /></a>
             <img class="icon" src="@/assets/pics/line_icon.svg" alt="" />
           </div>
         </div>

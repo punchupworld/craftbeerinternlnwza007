@@ -71,25 +71,132 @@
 
           <div class="line mb-4 mt-4 m-auto"></div>
 
-          <p class="b4">ผลกระทบ :</p>
+          <div class="last">
+            <p class="b4 text-start">ผลกระทบ :</p>
 
-          <ul>
-            <li class="b5">ผู้ขายแอลกอฮอล์รายเล็กสูญเสียรายได้</li>
-            <li class="b5">
-              ประชาชนที่ไม่ได้สมาทานศีลธรรมพุทธก็ต้องปฏิบัติ <br />
-              ตามกฎหมายด้วยเหตุผลที่ว่า…เพื่อศีลธรรมอันดี
-            </li>
-          </ul>
+            <ul class="text-start">
+              <li class="b5">ผู้ขายแอลกอฮอล์รายเล็กสูญเสียรายได้</li>
+              <li class="b5">
+                ประชาชนที่ไม่ได้สมาทานศีลธรรมพุทธก็ต้องปฏิบัติ <br />
+                ตามกฎหมายด้วยเหตุผลที่ว่า…เพื่อศีลธรรมอันดี
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </b-modal>
 
     <b-modal id="modal-2" scrollable size="xl" hide-footer>
-      <p class="my-4">Hello from modal2!</p>
+      <div class="row p-3">
+        <div
+          class="modalpic col-5 d-flex justify-content-center align-items-start"
+        >
+          <img src="@/assets/pics/frame4/4.7/card 2.svg" />
+        </div>
+        <div class="col-7 p-4 d-flex flex-column text-center">
+          <h2 class="topicmodal mb-4">คราฟต์เบียร์ไทย ราคาไม่น่ารัก</h2>
+          <p class="b5">
+            รัฐบาลใช้พ.ร.บ. ภาษีสรรพสามิตเป็นเครื่องมือเพื่อให้ <br />
+            ประชาชนลดการบริโภคเครื่องดื่มแอลกอฮอล์ <br />
+            แต่วิธีนี้ไม่ค่อยได้ผล เพราะคนไทยมีความยืดหยุ่นต่อการบริโภคสูง
+          </p>
+
+          <p class="b4">ต้นทุนของคราฟต์เบียร์มาจากอะไร ?</p>
+
+          <p class="b5">
+            นอกจากค่าขนส่งและค่าวัตถุดิบแล้ว <br />
+            ต้นทุนของคราฟต์เบียร์ยังมีของเรื่อง<span> ภาษี </span>ด้วย
+          </p>
+          <p class="b6 gray">
+            (แต่อนุญาตให้ขายได้เฉพาะร้านปลอดอากร <br />
+            ภายในอาคารท่าอากาศยานนานาชาติ)
+          </p>
+
+          <img src="@/assets/pics/frame4/4.7/print.svg" class="print" />
+
+          <div class="last">
+            <p class="b4 text-start">ผลกระทบ :</p>
+
+            <ul class="text-start">
+              <li class="b5">
+                ภาษีที่สูงทำให้ประชาชนต้องแบกรับค่าใช้จ่ายเพิ่ม <br />
+                และทำให้คราฟต์เบียร์ถูกจำกัดเป็นเครื่องดื่มของคนเฉพาะกลุ่ม
+              </li>
+              <li class="b5">
+                ถึงแม้รสชาติที่แปลกใหม่เป็นเอกลักษณ์ของคราฟต์เบียร์ <br />
+                แต่รสชาติที่คาดเดาไม่ได้มาพร้อมกับราคาที่สูง <br />
+                ทำให้เบียร์กระแสหลักยังครองใจคนไทย <br />
+                ดังนั้นคราฟต์เบียร์จึงแจ้งเกิดได้ยาก
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </b-modal>
 
     <b-modal id="modal-3" scrollable size="xl" hide-footer>
-      <p class="my-4">Hello from modal3!</p>
+      <div class="row p-3">
+        <div
+          class="modalpic col-5 d-flex justify-content-center align-items-start"
+        >
+          <img src="@/assets/pics/frame4/4.7/card 3.svg" />
+        </div>
+        <div class="col-7 p-4 d-flex flex-column text-center">
+          <h2 class="topicmodal mb-4">
+            กฎหมายโฆษณา <br />
+            ปิดโอกาสรายย่อย
+          </h2>
+          <p class="b5">
+            มาตรา 32 ของ พ.ร.บ.ควบคุมเครื่องดื่มแอลกอฮอล์ <br />
+            พ.ศ. 2551 บัญญัติว่า
+          </p>
+
+          <div class="main-topic d-flex flex-column">
+            <img
+              src="@/assets/pics/frame4/4.7/top.svg"
+              class="luknam m-4 align-self-center"
+            />
+            <p class="b4">
+              ห้ามมิให้ผู้ใดโฆษณาเครื่องดื่มแอลกอฮอล์ <br />
+              ห้ามแสดงชื่อหรือเครื่องหมายของเครื่องดื่ม <br />
+              แอลกอฮอล์ อันเป็นการอวดอ้างสรรพคุณ <br />
+              หรือชักชวนใจให้ผู้อื่นดื่มโดยตรงหรือโดยอ้อม
+            </p>
+            <img
+              src="@/assets/pics/frame4/4.7/bot.svg"
+              class="luknam m-4 align-self-center"
+            />
+          </div>
+
+          <p class="b5">
+            ดังนั้นผู้ประกอบการ<span>ไม่สามารถโฆษณา แสดงชื่อหรือโลโก้</span
+            ><br />
+            หรือแม้กระทั่ง<span>พูดถึงรสชาติของเครื่องดื่มแอลกอฮอล์ได้</span
+            ><br />
+            เพราะอาจเข้าข่ายความผิดแต่อย่างไรก็ตามกฎหมายนี้ <br />
+            ถูกบังคับใช้ในราชอาณาจักรไทยเท่านั้น
+          </p>
+
+          <img src="@/assets/pics/frame4/4.7/lisa.svg" class="lisa" />
+
+          <div class="last">
+            <p class="b4 text-start">ผลกระทบ :</p>
+
+            <ul class="text-start">
+              <li class="b5">
+                ผู้ประกอบการรายย่อยไม่สามารถสื่อสารสินค้าให้กับผู้บริโภค <br />
+                ทำให้สินค้าไม่เป็นที่รู้จัก ยิ่งเป็นการกีดกันการเข้ามาแข่งขัน
+                <br />
+                ในตลาดกับแบรนด์ใหญ่
+              </li>
+              <li class="b5">
+                ในเมื่อผลลัพธ์ที่ได้จากการโปรโมทเหมือนกันแต่รายได้กลับ <br />
+                ไปตกอยู่ที่ธุรกิจโฆษณาของต่างประเทศ
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </b-modal>
   </div>
 </template>
@@ -146,11 +253,35 @@ h4 {
   width: 40%;
   border: 1px solid black;
 }
+.modalpic {
+}
 .modalpic img {
   width: 100%;
 }
 .topicmodal {
   color: #de5850;
+}
+.last {
+  margin-left: 3rem;
+}
+.print {
+  width: 50%;
+  margin: auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.lisa {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+.luknam {
+  width: 5%;
+}
+.main-topic p {
+  color: #de5850;
+}
+span {
+  background: #f4cc2d;
 }
 /* modal */
 </style>

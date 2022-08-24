@@ -60,9 +60,18 @@
         <div class="col-7">
           <img src="@/assets/pics/cover/shelf_fade.svg" alt="" />
         </div>
-        <div
-          class="col-5 d-flex justify-content-center align-items-center"
-        ></div>
+        <div class="col-5 d-flex flex-column justify-content-center">
+          <vue-aos animation-class="fadeInUp animated">
+            <div class="topic">
+              <h1 class="text-topic">คราฟต์เบียร์ไทย</h1>
+              <h1 class="text-topic">ฝันไกล ไป<span>(ไม่)</span>ถึง</h1>
+            </div>
+          </vue-aos>
+          <div class="text-second b5 align-self-center text-center">
+            ชวนทำความเข้าใจปัญหาเบียร์ไทย <br />
+            ผ่านคราฟต์เบียร์ 24 แบรนด์
+          </div>
+        </div>
       </div>
 
       <div class="text-center">
@@ -150,8 +159,8 @@ export default {
 }
 .close-button {
   position: absolute;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background: white;
   top: 0;
   right: 0;
@@ -164,5 +173,25 @@ export default {
 .close-button:hover {
   background: #de5850;
   color: white;
+}
+.text-topic {
+  border: 1px solid;
+  background: white;
+  padding: 0.5rem;
+  width: fit-content;
+  margin: auto;
+}
+.text-topic:nth-child(1) {
+  transform: translateX(-20%) rotate(4deg);
+}
+.text-topic:nth-child(2) {
+  transform: translateX(20%) rotate(-4deg);
+}
+.text-topic span {
+  color: white;
+  -webkit-text-stroke: 0.7px black;
+}
+.text-second{
+  transform: translateY(180%);
 }
 </style>

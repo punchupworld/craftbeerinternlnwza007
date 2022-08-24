@@ -14,11 +14,10 @@
       <div class="container d-flex flex-column align-items-center">
         <div class="result row" v-if="list.length > 0">
           <div class="bgwhite"></div>
-          <div class="abv">
-            <p class="b6">
-              *ABV ย่อมาจาก Alcohol By Volume หรือ ปริมาณแอลกอฮอล์
-            </p>
-          </div>
+
+          <p class="b6 abv">
+            *ABV ย่อมาจาก Alcohol By Volume หรือ ปริมาณแอลกอฮอล์
+          </p>
 
           <div
             class="imgframe col-5 d-flex align-items-center justify-content-center"
@@ -107,14 +106,15 @@ export default {
   left: 0;
   right: 0;
 }
-.abv{
+.abv {
   background: white;
   border: 1px solid black;
-  padding: .5rem;
+  padding: 0.5rem;
   position: absolute;
   bottom: 0;
   width: fit-content;
   right: 0;
+  transform: translate(-10%,-75%);
 }
 .result {
   position: relative;
