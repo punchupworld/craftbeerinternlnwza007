@@ -87,9 +87,62 @@
         </div>
       </div>
 
-      <div
-        class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
-      ></div>
+      <div class="bookmark-bg container-fluid d-flex flex-column p-5">
+        <div class="topic d-flex justify-content-center align-items-center">
+          <h1 class="">ถ้าพ.ร.บ.สุราก้าวหน้าปลดล็อกแล้ว</h1>
+          <h3 class="nd">จะเกิดอะไรขึ้น<span class="qs"> ? </span></h3>
+        </div>
+
+        <div class="cardpart d-flex justify-content-center">
+          <div class="cardd p-1">
+            <div class="imgcontent">
+              <img src="@/assets/pics/frame5/5.2/logo1.svg" alt="" />
+            </div>
+            <div
+              class="datacontent d-flex justify-content-center align-items-center"
+            >
+              <p class="b5 text-center">
+                มีการยกเลิกเกณฑ์ขั้นต่ำ <br />
+                ด้านเงินทุนและการผลิต <br />
+                ทำให้ประชาชนมีโอกาสทดลอง <br />
+                และสร้างสรรค์คราฟต์เบียร์มากขึ้น <br />
+                และสามารถเข้าแข่งขันใน <br />
+                ตลาดเบียร์ได้อย่างเสรี
+              </p>
+            </div>
+          </div>
+          <div class="cardd p-1">
+            <div class="imgcontent">
+              <img src="@/assets/pics/frame5/5.2/logo2.svg" alt="" />
+            </div>
+            <div
+              class="datacontent d-flex justify-content-center align-items-center"
+            >
+              <p class="b5 text-center">
+                ส่งเสริมการเกษตรของไทย <br />
+                ภาคธุรกิจที่เกี่ยวข้อง <br />
+                และช่วยกระตุ้นเศรษฐกิจ <br />
+                การท่องเที่ยว
+              </p>
+            </div>
+          </div>
+          <div class="cardd p-1">
+            <div class="imgcontent">
+              <img src="@/assets/pics/frame5/5.2/logo3.svg" alt="" />
+            </div>
+            <div
+              class="datacontent d-flex justify-content-center align-items-center"
+            >
+              <p class="b5 text-center">
+                ทำให้ให้ผู้บริโภคมีตัวเลือก <br />
+                ในการบริโภค และได้ลิ้มลอง <br />
+                ความหลากหลายทางรสชาติ <br />
+                ในราคาที่จับต้องได้
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -169,7 +222,55 @@ export default {
 span {
   background: #f8ef8f;
 }
-.edit{
+.edit {
   margin-bottom: 0;
+}
+
+/* 3if */
+.topic {
+  position: relative;
+}
+.topic h1 {
+  padding: 1rem;
+  background: white;
+  border: 1px solid;
+  transform: rotate(-2deg);
+  width: fit-content;
+}
+.topic .nd {
+  background: white;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  position: absolute;
+  bottom: 0;
+  transform: translate(100%, 70%) rotate(3deg);
+}
+.nd span {
+  color: white;
+  background: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 3rem;
+}
+.cardpart {
+  margin: 5rem;
+  height: 100%;
+}
+.cardd {
+  width: 90%;
+}
+.imgcontent {
+  height: 50%;
+  object-fit: cover;
+}
+.imgcontent img {
+  width: 100%;
+  height: 100%;
+}
+.datacontent {
+  border: 1px solid;
+  height: 30%;
+  margin: 3rem 1rem;
+  background: white;
 }
 </style>

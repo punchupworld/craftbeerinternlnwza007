@@ -25,6 +25,11 @@ export default {
 </script>
 
 <style scoped>
+.bookmark-bg{
+  background-image: url("~@/assets/pics/frame3/3.8/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bordertext {
   background: #F4CC2D;
   width: fit-content;

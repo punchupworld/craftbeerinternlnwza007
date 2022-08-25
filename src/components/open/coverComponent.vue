@@ -177,7 +177,7 @@ export default {
 .text-topic {
   border: 1px solid;
   background: white;
-  padding: 0.5rem;
+  padding: 1rem;
   width: fit-content;
   margin: auto;
 }

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="gradient"></div>
     <div class="bookmark-bg d-flex justify-content-center align-items-center">
       <div class="text-center">
         <h1>
@@ -15,23 +16,23 @@
             class="choose-form form-select"
             aria-label="Default select example"
           >
-            <option value="1" selected>ส่วนประกอบ</option>
-            <option value="2">วัตถุดิบพิเศษ</option>
-            <option value="3">กระบวนการผลิต</option>
-            <option value="4">รสชาติ</option>
-            <option value="5">ราคา (330 มล.)</option>
-            <option value="6">สเกลการผลิต</option>
-            <option value="7">การจำหน่าย</option>
+            <option selected @click="changeValue(0)">ส่วนประกอบ</option>
+            <option @click="changeValue(1)">วัตถุดิบพิเศษ</option>
+            <option @click="changeValue(2)">กระบวนการผลิต</option>
+            <option @click="changeValue(3)">รสชาติ</option>
+            <option @click="changeValue(4)">ราคา (330 มล.)</option>
+            <option @click="changeValue(5)">สเกลการผลิต</option>
+            <option @click="changeValue(6)">การจำหน่าย</option>
           </select>
         </div>
-        <p class="grey b4 m-2">วางเมาส์ที่รูปเพื่อดูรายละเอียด</p>
+        <p class="grey b4 mt-2 mb-4">วางเมาส์ที่รูปเพื่อดูรายละเอียด</p>
 
         <div class="imgchoose m-auto">
           <!-- <img src="@/assets/pics/compare/2/main.svg" alt="" /> -->
-          <second-svg></second-svg>
+          <second-svg v-if="value == 0"></second-svg>
         </div>
 
-        <h3>รู้จักกับคราฟต์เบียร์มากขึ้นแล้วใช่ไหม</h3>
+        <h3 class="mt-5">รู้จักกับคราฟต์เบียร์มากขึ้นแล้วใช่ไหม</h3>
         <h1>งั้นไปต่อกันเลย !</h1>
       </div>
     </div>
@@ -47,19 +48,22 @@
 </template>
 
 <script>
-import SecondSvg from '../svgimage/SecondSvg.vue';
-
-
+import SecondSvg from "../svgimage/SecondSvg.vue";
 
 export default {
   components: { SecondSvg },
   name: "BookMark1",
   data() {
     return {
-      value: 1,
+      value: 0,
     };
   },
-  methods: {},
+  methods: {
+    changeValue(number) {
+      this.value = number;
+      console.log(this.value);
+    },
+  },
 };
 </script>
 
@@ -81,7 +85,13 @@ span {
 .grey {
   color: #949494;
 }
-.imgchoose{
+.imgchoose {
   width: 60%;
+}
+/* gredient */
+.gradient {
+  width: 100vw;
+  height: 30vh;
+  background-image: linear-gradient(#E3EAF0, white);
 }
 </style>

@@ -63,6 +63,8 @@
         </div>
       </div>
     </div>
+
+    <div class="lasttt"></div>
   </div>
 </template>
 
@@ -73,8 +75,13 @@ export default {
 </script>
 
 <style scoped>
-.bookmark-bg {
+.bookmark-bg,
+.lasttt {
   background: #f8ef8f;
+}
+.lasttt {
+  width: 100vw;
+  height: 5vh;
 }
 .profile {
   position: relative;
@@ -87,10 +94,10 @@ export default {
   position: absolute;
   bottom: 0;
 }
-.profile .position{
+.profile .position {
   transform: rotate(-3deg) translateY(60%);
 }
-.profile .position2{
+.profile .position2 {
   transform: rotate(3deg) translateY(60%);
 }
 .profile img {

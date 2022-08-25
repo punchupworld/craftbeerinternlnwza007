@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="gradient">
+    </div>
     <div
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
     >
@@ -43,5 +45,10 @@ export default {
 }
 .cover{
   width: 60%;
+}
+.gradient{
+  width: 100vw;
+  height: 50vh;
+   background-image: linear-gradient(#2C2828, #E3EAF0);
 }
 </style>
