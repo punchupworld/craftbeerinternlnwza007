@@ -273,8 +273,11 @@ span {
 }
 .datacontent {
   border: 1px solid;
-  height: 30%;
+  height: 34%;
   margin: 3rem 1rem;
   background: white;
+}
+.datacontent p{
+  margin-bottom: 0;
 }
 </style>
