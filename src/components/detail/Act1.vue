@@ -22,7 +22,7 @@
       </div>
 
       <div
-        class="bookmark-bg3 container-fluid d-flex justify-content-center align-items-center"
+        class="bookmark-bg3 container-fluid d-flex justify-content-center align-items-center p-5"
       >
         <div class="text-center display-flex flex-column">
           <h1 class="text-color m-auto mb-2">พ.ร.บ. สุราก้าวหน้า</h1>
@@ -101,7 +101,7 @@
             <div
               class="datacontent d-flex justify-content-center align-items-center"
             >
-              <p class="b5 text-center">
+              <p class="b6 text-center">
                 มีการยกเลิกเกณฑ์ขั้นต่ำ <br />
                 ด้านเงินทุนและการผลิต <br />
                 ทำให้ประชาชนมีโอกาสทดลอง <br />
@@ -154,6 +154,10 @@ export default {
 </script>
 
 <style scoped>
+.bookmark-bg{
+  width: 100vw;
+  height: 100%;
+}
 .bookmark-bg2,
 .bookmark-bg3,
 .bookmark-bg {
