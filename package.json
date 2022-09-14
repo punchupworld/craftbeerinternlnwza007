@@ -13,6 +13,7 @@
     "bootstrap-vue": "^2.22.0",
     "boxicons": "^2.1.2",
     "core-js": "^3.6.5",
+    "interactjs": "^1.10.17",
     "intersection-observer": "^0.12.2",
     "v-animate-css": "^0.0.5",
     "vue": "^2.6.11",

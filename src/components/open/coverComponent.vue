@@ -1,5 +1,10 @@
 <template>
   <div>
+    <div class="bookmark-bg">
+      <div class="slider"></div>
+      <div class="slider"></div>
+      <div class="slider"></div>
+    </div>
     <div class="firstpage bookmark-bg">
       <div
         class="disclaimer d-flex justify-content-center align-items-center"
@@ -88,16 +93,55 @@
 <script>
 import "boxicons";
 
+import interact from "interactjs";
+
 export default {
   name: "coverComponent",
   data() {
     return {
       toggle: true,
+      screenX: 0,
+      screenY: 0,
     };
+  },
+  mounted: function () {
+    let myDraggable = this.$refs.myDraggable;
+    this.initInteract(myDraggable);
   },
   methods: {
     closePopup() {
       this.toggle = !this.toggle;
+    },
+    initInteract: function (selector) {
+      interact(".slider") // target elements with the 'slider' class
+        .draggable({
+          // make the element fire drag events
+          origin: "self", // (0, 0) will be the element's top-left
+          inertia: true, // start inertial movement if thrown
+          modifiers: [
+            interact.modifiers.restrict({
+              restriction: "self", // keep the drag coords within the element
+            }),
+          ],
+          onmove: this.dragMoveListener,
+          onend: this.onDragEnd
+        });
+    },
+    dragMoveListener: function (event) {
+      const sliderWidth = interact.getElementRect(
+        event.target.parentNode
+      ).width;
+      const value = event.pageX / sliderWidth;
+
+      event.target.style.paddingLeft = value * 100 + "%";
+      event.target.setAttribute("data-value", value.toFixed(2));
+    },
+    onDragEnd: function (event) {
+      var target = event.target;
+      console.log(target);
+      // update the state
+      this.screenX = target.getBoundingClientRect().left;
+      this.screenY = target.getBoundingClientRect().top;
     },
   },
 };
@@ -132,10 +176,13 @@ export default {
   width: 90%;
   height: 100%;
   position: relative;
+  border: 1px solid black;
 }
 .cart img {
   height: 100%;
   z-index: 1;
+  border: 1px solid red;
+  /* transform: translateX(200%); */
 }
 .textblink {
   top: 0;
@@ -191,7 +238,55 @@ export default {
   color: white;
   -webkit-text-stroke: 0.7px black;
 }
-.text-second{
+.text-second {
   transform: translateY(180%);
+}
+
+/* the slider bar */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 1em;
+  margin: 1.5em auto;
+  background-color: #29e;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+
+  font-size: 11vh;
+
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* the slider handle */
+.slider:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -0.5em;
+
+  width: 2em;
+  height: 2em;
+  margin-left: -1em;
+  border: solid 0.25em #fff;
+  border-radius: 1em;
+  background-color: inherit;
+
+  box-sizing: border-box;
+}
+
+/* display the value */
+.slider:after {
+  content: attr(data-value);
+  position: absolute;
+  top: -1.5em;
+  width: 2em;
+  line-height: 1em;
+  margin-left: -1em;
+  text-align: center;
+}
+
+body {
+  margin: 5% 10%;
 }
 </style>

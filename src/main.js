@@ -12,7 +12,6 @@ import 'animate.css'
 
 import store from './store'
 
-
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
