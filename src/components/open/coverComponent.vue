@@ -4,6 +4,7 @@
       <div class="slider"></div>
       <div class="slider"></div>
       <div class="slider"></div>
+      <img src="@/assets/pics/OG/OG.png" alt="">
     </div>
     <div class="firstpage bookmark-bg">
       <div
