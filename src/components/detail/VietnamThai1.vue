@@ -2,12 +2,12 @@
   <div>
     <div class="bg container-fluid">
       <div class="container">
-        <div class="text-center pt-5">
+        <div class="hi text-center pt-5">
           <img src="@/assets/pics/frame4/4.1/text2.svg" alt="" />
         </div>
 
         <div class="row mt-5">
-          <div class="col-7 text-center">
+          <div class="col-lg-7 col-12 text-center">
             <p class="b5">
               นอกจาก<span class="b4"> นครโฮจิมินห์ </span
               >จะเป็นเมืองหลวงแห่งคราฟต์เบียร์แล้ว <br />
@@ -59,8 +59,8 @@
               />
             </div>
           </div>
-          <div class="col-5">
-            <p class="b5">
+          <div class="col-lg-5 col-12 more">
+            <p class="right-text b5">
               * ข้อมูลจาก BarthHaas รายงานว่า <br />
               ในปี 2020 เวียดนามผลิตเบียร์ได้ <br />
               40,000,000 hl เวียดนามจึงอยู่ใน <br />
@@ -121,5 +121,37 @@ p span {
   right: 0;
   text-align: left;
   margin: 0;
+}
+.more{
+  align-self:flex-end;
+  text-align: end;
+}
+.right-text{
+  transform: translateY(30%);
+}
+/* ipad */
+@media (max-width: 821px) {
+  .bg {
+    height: 100vh;
+  }
+  .right-text {
+    font-size: 14px;
+    transform: translate(-10%, -120px);
+  }
+  .imgbeer img {
+    margin: 1rem;
+  }
+}
+/* mobile */
+@media (max-width: 540px) {
+  .more {
+    display: none;
+  }
+  .bg {
+    background-image: none;
+  }
+  .hi img {
+    width: 80%;
+  }
 }
 </style>

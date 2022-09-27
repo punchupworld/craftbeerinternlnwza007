@@ -1,7 +1,7 @@
 <template>
   <div>
     <section >
-      <div class="logo-pu"><img src="@/assets/pics/pulogo.svg" alt=""></div>
+      <!-- <div class="logo-pu"><img src="@/assets/pics/pulogo.svg" alt=""></div> -->
       <intro-component></intro-component>
       <interaction-component></interaction-component>
       <problem-component v-if="$store.state.count"></problem-component>
@@ -78,9 +78,9 @@ h4 {
   width: 100vw;
   height: 100vh;
 }
-.logo-pu{
+/* .logo-pu{
   position: absolute;
   z-index: 1;
   position: fixed;
-}
+} */
 </style>

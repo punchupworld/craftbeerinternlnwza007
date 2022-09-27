@@ -30,12 +30,12 @@
           <p class="b5">คอนเซปต์ของพ.ร.บ.สุราก้าวหน้า คือ</p>
 
           <div class="part2 d-flex flex-column">
-            <img src="@/assets/pics/frame4/4.6/top.svg" class="mb-5" />
+            <img src="@/assets/pics/frame4/4.6/top.svg" class="mt-lg-5 mb-lg-5 mt-4 mb-4" />
             <h1>
               ยกเลิกกฎหมายที่เป็นอุปสรรคต่อการผลิตสุรา <br />
               หรือขัดขวางไม่ให้ประชาชนประกอบอาชีพผลิตสุราได้อย่างเสรี
             </h1>
-            <img src="@/assets/pics/frame4/4.6/bot.svg" class="mt-5 mb-5" />
+            <img src="@/assets/pics/frame4/4.6/bot.svg" class="mt-lg-5 mb-lg-5 mt-4 mb-4" />
           </div>
 
           <div class="part3 text-center m-auto">
@@ -87,9 +87,9 @@
         </div>
       </div>
 
-      <div class="bookmark-bg container-fluid d-flex flex-column p-5">
+      <div class="bookmark-bg container-fluid d-flex flex-column p-lg-5 p-sm-1">
         <div class="topic d-flex justify-content-center align-items-center">
-          <h1 class="">ถ้าพ.ร.บ.สุราก้าวหน้าปลดล็อกแล้ว</h1>
+          <h1>ถ้าพ.ร.บ.สุราก้าวหน้าปลดล็อกแล้ว</h1>
           <h3 class="nd">จะเกิดอะไรขึ้น<span class="qs"> ? </span></h3>
         </div>
 
@@ -154,7 +154,7 @@ export default {
 </script>
 
 <style scoped>
-.bookmark-bg{
+.bookmark-bg {
   width: 100vw;
   height: 100%;
 }
@@ -193,7 +193,6 @@ export default {
 .hand {
   width: 70%;
 }
-
 .part2 img {
   width: 3rem;
   margin: auto;
@@ -277,7 +276,74 @@ span {
   margin: 3rem 1rem;
   background: white;
 }
-.datacontent p{
+.datacontent p {
   margin-bottom: 0;
+}
+
+/* ipad */
+@media (max-width: 821px) {
+  .part2 h1 {
+    font-size: 1.7rem;
+  }
+  .cardpart {
+    margin: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .datacontent {
+    height: 43%;
+    margin: 3rem 0.5rem;
+    padding: 1.5rem;
+  }
+  .datacontent p {
+    font-size: 20px;
+  }
+  .imgcontent {
+    display: flex;
+    justify-content: center;
+  }
+  .imgcontent img {
+    width: 60%;
+  }
+}
+@media (max-width: 540px) {
+  .maintext{
+    padding: 2rem;
+  }
+  .maintext h1{
+    font-size: 1rem;
+  }
+  .part2 h1 {
+    font-size: 1rem;
+  }
+  .part2 img {
+    width: 2rem;
+  }
+  .edit {
+    font-size: 0.7rem;
+  }
+  .circle {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+  .topic h1 {
+    font-size: 1rem;
+  }
+  .topic .nd {
+    transform: translate(75%, 70%) rotate(3deg);
+  }
+  .topic .nd,
+  .topic .qs {
+    font-size: 1rem;
+  }
+  .datacontent p {
+    font-size: 0.5rem;
+  }
+  .datacontent {
+    height: 34%;
+    margin: 1rem 1rem;
+    padding: 1rem;
+  }
 }
 </style>

@@ -7,7 +7,7 @@
         </div>
 
         <div class="frame row">
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-md-12 text-center">
             <div class="profile mb-4 d-flex justify-content-center">
               <img src="@/assets/pics/profile/soup.svg" />
               <p class="b5 position">Data Storyteller</p>
@@ -21,7 +21,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-md-12 text-center">
             <div class="profile mb-4 d-flex justify-content-center">
               <img src="@/assets/pics/profile/ploy.png" />
               <p class="b5 position2">Digital Designer</p>
@@ -35,7 +35,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-md-12 text-center">
             <div class="profile mb-4 d-flex justify-content-center">
               <img src="@/assets/pics/profile/wit.png" />
               <p class="b5 position">Web Developer</p>
@@ -55,16 +55,15 @@
           <img
             src="@/assets/pics/profile/restart.svg"
             alt=""
-            class="footer mb-2"
+            class="footer mb-2 mb-md-4"
           />
-          <div class="b6">BACK TO HOME</div>
-          <div class="b6">กลับสู่หน้าแรก</div>
+          <div class="textfoot b6">BACK TO HOME</div>
+          <div class="textfoot b6">กลับสู่หน้าแรก</div>
           <img src="@/assets/pics/profile/PU.svg" alt="" class="PU mt-5" />
         </div>
       </div>
     </div>
 
-    <div class="lasttt"></div>
   </div>
 </template>
 
@@ -75,13 +74,10 @@ export default {
 </script>
 
 <style scoped>
-.bookmark-bg,
-.lasttt {
+.bookmark-bg{
   background: #f8ef8f;
-}
-.lasttt {
   width: 100vw;
-  height: 5vh;
+  height: 100%;
 }
 .profile {
   position: relative;
@@ -120,5 +116,44 @@ export default {
 .frame {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+/* ipad air */
+@media (max-width: 821px) {
+  .lasttt {
+    width: 100vw;
+    height: 35vh;
+  }
+  .profile img {
+    width: 50%;
+  }
+  .header{
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .footer{
+    width: 6%;
+  }
+}
+/* mobile */
+@media (max-width: 540px){
+  .profile img{
+    width: 70%;
+  }
+  .detail .b4{
+    font-size: 14px;
+  }
+  .detail .b6{
+    font-size: 12px;
+  }
+  .position,.position2{
+    font-size: .8rem;
+  }
+  .textfoot{
+    font-size: .7rem;
+  }
+  .PU{
+    width: 30%;
+  }
 }
 </style>

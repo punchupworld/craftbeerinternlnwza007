@@ -19,7 +19,12 @@
           </div>
         </vue-aos>
       </div>
-      <button class="randombtn d-flex justify-content-center align-items-center b3" @click="randomBeer">Random!</button>
+      <button
+        class="randombtn d-flex justify-content-center align-items-center b3"
+        @click="randomBeer"
+      >
+        Random!
+      </button>
     </div>
 
     <div
@@ -27,28 +32,37 @@
       v-if="$store.state.count"
       id="test"
     >
-      <div class="paper row align-self-center" v-if="list.length > 0">
-        <vue-aos animation-class="zoomIn animated">
-          <img
-            :src="require(`@/assets/pics/beer24/${list[0].imgpath}`)"
-            class="bottle-beer"
-          />
-        </vue-aos>
+      <div
+        class="paper row align-self-center d-flex justify-content-center align-items-center"
+        v-if="list.length > 0"
+      >
+        <div
+          class="right right1 col-lg-4 col-md-4 d-flex justify-content-center align-items-center"
+        >
+          <vue-aos animation-class="zoomIn animated">
+            <img
+              :src="require(`@/assets/pics/beer24/${list[0].imgpath}`)"
+              class="bottle-beer"
+            />
+          </vue-aos>
+        </div>
 
-        <div class="right col-4"></div>
-
-        <div class="right col-8 mt-5">
-          <h1 class="name pb-4">{{ list[0].name }}</h1>
-          <p class="b4">
-            <span class="bold">แบรนด์ : </span>{{ list[0].brand }}
-          </p>
-          <p class="b4">
-            <span class="bold">ประเภท : </span>{{ list[0].type }}
-          </p>
-          <p class="b4"><span class="bold">ABV : </span>{{ list[0].abv }}</p>
-          <p class="b4">
-            <span class="bold">รสชาติ : </span>{{ list[0].flavor }}
-          </p>
+        <div
+          class="right right2 col-12 col-lg-8 col-md-8 mt-2 d-flex justify-content-center align-items-center"
+        >
+          <div>
+            <h1 class="name pb-lg-4 pb-2">{{ list[0].name }}</h1>
+            <p class="b4">
+              <span class="bold">แบรนด์ : </span>{{ list[0].brand }}
+            </p>
+            <p class="b4">
+              <span class="bold">ประเภท : </span>{{ list[0].type }}
+            </p>
+            <p class="b4"><span class="bold">ABV : </span>{{ list[0].abv }}</p>
+            <p class="b4">
+              <span class="bold">รสชาติ : </span>{{ list[0].flavor }}
+            </p>
+          </div>
         </div>
 
         <p class="b6 abv">
@@ -71,7 +85,12 @@
       </div>
     </div>
 
-    <div class="bookmark-bg2 p-5 d-flex justify-content-center align-items-center" v-if="$store.state.count">
+    <!-- ทำไทม์ไลน์แล้วมาเปิดด้วย -->
+
+    <!-- <div
+      class="bookmark-bg2 p-5 d-flex justify-content-center align-items-center"
+      v-if="$store.state.count"
+    >
       <div class="content-timeline">
         <div class="topic text-center">
           <h1>
@@ -84,7 +103,12 @@
           <img src="@/assets/pics/frame3/3.5/smalltimeline.svg" alt="" />
         </div>
       </div>
-    </div>
+    </div> -->
+
+
+
+
+
     <!-- <div
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
       v-if="$store.state.count"
@@ -232,12 +256,7 @@ export default {
   padding: 1rem 4rem;
 }
 .bottle-beer {
-  width: 27%;
-  position: absolute;
-  top: 0;
-  left: 7%;
-  bottom: 0;
-  margin: auto;
+  width: 100%;
   transform: rotate(-7deg);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -266,7 +285,9 @@ export default {
   cursor: pointer;
 }
 .randompart {
+  justify-content: center;
   padding: 5rem 0;
+  overflow: hidden;
 }
 .text {
   margin-top: 5rem;
@@ -298,20 +319,20 @@ export default {
   background: #de5850;
   color: white;
 }
-.content-timeline{
+.content-timeline {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.topic h1{
-  color: #8ABBE8;
+.topic h1 {
+  color: #8abbe8;
 }
-.stroke{
+.stroke {
   color: white;
   -webkit-text-stroke: 1px black;
   font-size: 3.5rem;
 }
 
-.randombtn{
+.randombtn {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
@@ -319,9 +340,118 @@ export default {
   border: 10px solid black;
   cursor: pointer;
 }
-.randombtn:hover{
-  background: #DE5850;
-  border: 10px solid #F8EF8F;
-  color: #F8EF8F;
+.randombtn:hover {
+  background: #de5850;
+  border: 10px solid #f8ef8f;
+  color: #f8ef8f;
+}
+.timeline img {
+  width: 100%;
+}
+/* ipad */
+@media (max-width: 821px) {
+  .bookmark-bg2 {
+    height: 80vh;
+  }
+  .paper {
+    width: 70%;
+    height: 35vh;
+  }
+  .footer {
+    bottom: 0;
+    right: -40%;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+  .right p {
+    font-size: 1rem;
+  }
+  .img-box {
+    width: 90%;
+  }
+  .img-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .right1{
+    padding: 0rem 2rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 540px) {
+  .paper {
+    width: 80%;
+    height: 50vh;
+  }
+  .right {
+    padding: 1rem 2rem;
+  }
+  .right h1 {
+    text-align: center;
+  }
+  .bottle-beer {
+    width: 30%;
+  }
+  .right2 {
+    height: 55%;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  .name {
+    font-size: 1.3rem;
+  }
+  .right1 {
+    height: 45%;
+  }
+  .right p {
+    font-size: 0.7rem;
+  }
+  .abv {
+    display: none;
+  }
+  .footer {
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: -40%;
+  }
+  .footer p {
+    margin-top: 1rem;
+  }
+  .text {
+    display: none;
+  }
+  .topic h1,
+  .topic span {
+    font-size: 1.5rem;
+  }
+  .close {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 376px) {
+  .paper {
+    width: 70%;
+    height: 68vh;
+  }
+  .bottle-beer {
+    width: 30%;
+  }
+  .footer {
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: -25%;
+  }
+  .footer img {
+    width: 2rem;
+  }
+  .footer p {
+    font-size: 0.6rem;
+  }
 }
 </style>

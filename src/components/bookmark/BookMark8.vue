@@ -11,9 +11,9 @@
         <div class="icon">
           <img src="@/assets/pics/frame4/4.8/emoji.svg" alt="">
         </div>
-        <h3>นอกจากจะได้ราคาคราฟต์เบียร์ที่ถูกลงแล้ว</h3>
-        <h3>เม็ดเงินยังกระจายไปถึง SME ที่เกี่ยวข้องกับคราฟต์เบียร์</h3>
-        <h3>
+        <h3 class="umm">นอกจากจะได้ราคาคราฟต์เบียร์ที่ถูกลงแล้ว</h3>
+        <h3 class="umm">เม็ดเงินยังกระจายไปถึง SME ที่เกี่ยวข้องกับคราฟต์เบียร์</h3>
+        <h3 class="umm">
           ตลอดจนถึงเกษตรกรอีกทั้งยังสร้างงาน สร้างรายได้ให้กับอาชีพที่เกี่ยวข้อง
         </h3>
       </div>
@@ -47,5 +47,26 @@ export default {
 .icon img{
   width: 5rem;
   margin: 4rem;
+}
+
+@media (max-width: 821px){
+  .bookmark-bg{
+    background: #2C2828;
+    height: 80vh;
+  }
+  .umm{
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 540px) {
+  .text h3{
+    font-size: 1.2rem;
+  }
+  .highlight h1{
+    font-size: 1.4rem;
+  }
+  .umm{
+    font-size: .7rem !important;
+  }
 }
 </style>

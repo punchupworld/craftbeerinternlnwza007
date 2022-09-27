@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div class="bookmark-bg">
+    <!-- <div class="bookmark-bg">
       <div class="slider"></div>
       <div class="slider"></div>
       <div class="slider"></div>
-    </div>
-    <div class="firstpage bookmark-bg">
+    </div> -->
+
+    <!-- <div class="firstpage bookmark-bg">
       <div
         class="disclaimer d-flex justify-content-center align-items-center"
         v-if="toggle == true"
@@ -31,11 +32,11 @@
       </div>
 
       <div class="row">
-        <div class="col-7">
+        <div class="col-lg-7 col-md-12">
           <img src="@/assets/pics/cover/shelf.svg" alt="" />
         </div>
         <div
-          class="col-5 d-flex justify-content-center align-items-center"
+          class="col-lg-5 col-md-12 d-flex justify-content-center align-items-center"
         ></div>
       </div>
 
@@ -51,9 +52,26 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="bookmark-bg">
+      <div
+        class="disclaimer d-flex justify-content-center align-items-center"
+        v-if="toggle == true"
+      >
+        <vue-aos animation-class="fadeInUp animated">
+          <div class="imgdis">
+            <div
+              class="close-button d-flex justify-content-center align-items-center b2"
+              @click="closePopup"
+            >
+              X
+            </div>
+            <img src="@/assets/pics/cover/disclaimer.svg" alt="" />
+          </div>
+        </vue-aos>
+      </div>
+
       <div class="text-center p-4">
         <p class="b5">
           *ผลงานชิ้นนี้เหมาะกับ <br />
@@ -62,10 +80,12 @@
       </div>
 
       <div class="row">
-        <div class="col-7">
+        <div class="jjj col-lg-7 col-md-12">
           <img src="@/assets/pics/cover/shelf_fade.svg" alt="" />
         </div>
-        <div class="col-5 d-flex flex-column justify-content-center">
+        <div
+          class="hhh col-lg-5 col-md-12 d-flex flex-column justify-content-center"
+        >
           <vue-aos animation-class="fadeInUp animated">
             <div class="topic">
               <h1 class="text-topic">คราฟต์เบียร์ไทย</h1>
@@ -79,7 +99,7 @@
         </div>
       </div>
 
-      <div class="text-center">
+      <div class="scroll-to text-center">
         <box-icon name="down-arrow-alt"></box-icon>
         <p class="b4">
           SCROLL<br />
@@ -110,6 +130,9 @@ export default {
   },
   methods: {
     closePopup() {
+      document.getElementsByTagName("body")[0].style.overflow = "hidden";
+      this.$store.commit("startResult", true);
+      document.getElementsByTagName("body")[0].style.overflow = "unset";
       this.toggle = !this.toggle;
     },
     initInteract: function (selector) {
@@ -124,7 +147,7 @@ export default {
             }),
           ],
           onmove: this.dragMoveListener,
-          onend: this.onDragEnd
+          onend: this.onDragEnd,
         });
     },
     dragMoveListener: function (event) {
@@ -157,6 +180,7 @@ export default {
   object-fit: cover;
   background-color: #e3eaf0;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .col-7 img {
   width: 100%;
@@ -288,5 +312,48 @@ export default {
 
 body {
   margin: 5% 10%;
+}
+
+/* ipad */
+@media (max-width: 821px) {
+  .hhh {
+    transform: translateY(-160%);
+  }
+  .hhh .text-second {
+    transform: translateY(270px);
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 540px) {
+  .disclaimer .imgdis {
+    width: 90%;
+  }
+  .disclaimer .imgdis img {
+    width: 100%;
+  }
+  .disclaimer .imgdis .close-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+  .hhh {
+    transform: translateY(-110%);
+  }
+  .hhh .text-second {
+    transform: translateY(200px);
+    font-size: 1rem;
+  }
+  .scroll-to {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+  }
+}
+@media (max-width: 376px) {
+  .hhh .text-second {
+    transform: translateY(110px);
+    font-size: 0.8rem;
+  }
 }
 </style>

@@ -4,7 +4,7 @@
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
     >
       <vue-aos animation-class="zoomIn animated">
-        <div class="d-flex flex-column text-center">
+        <div class="hi d-flex flex-column text-center">
           <h1>แล้วคราฟต์เบียร์สัญชาติไทย</h1>
           <div class="bordertext text-center m-auto">
             <h1>ไปผลิตที่ไหน</h1>
@@ -25,13 +25,13 @@ export default {
 </script>
 
 <style scoped>
-.bookmark-bg{
+.bookmark-bg {
   background-image: url("~@/assets/pics/frame3/3.8/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bordertext {
-  background: #F4CC2D;
+  background: #f4cc2d;
   width: fit-content;
 }
 .span2 {
@@ -41,4 +41,6 @@ export default {
   font-weight: bold;
   font-size: 5rem;
 }
+
+
 </style>

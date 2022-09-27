@@ -21,12 +21,15 @@
         <div class="step justify-content-center" data-step-no="1">
           <div class="data">
             <vue-aos animation-class="bounceInRight animated">
-              <img src="@/assets/pics/shelfchart/2.1/topic.svg" alt=""
+              <img
+                src="@/assets/pics/shelfchart/2.1/topic.svg"
+                alt=""
+                class="topicpic"
             /></vue-aos>
           </div>
         </div>
         <div class="step" data-step-no="2">
-          <div class="data">
+          <div class="data data1">
             <p class="b4">
               เบียร์ที่คนไทยส่วนใหญ่คุ้นเคยกว่า <span class="b2">99%</span>
             </p>
@@ -52,12 +55,16 @@
             <div class="imgtext d-flex align-items-center">
               <p class="b4">อีก <span class="b2">1%</span> ที่เหลือคือ</p>
               <!-- <img src="@/assets/pics/shelfchart/2.2/1.svg" class="rotate1" /> -->
-              <div class="rotate1 highlight2"><p class="b3">"คราฟเบียร์"</p></div>
+              <div class="rotate1 highlight2">
+                <p class="b3">"คราฟเบียร์"</p>
+              </div>
             </div>
             <div class="imgtext d-flex mb-5">
               <p class="b4">และ</p>
               <!-- <img src="@/assets/pics/shelfchart/2.2/2.svg" class="rotate2" /> -->
-              <div class="rotate2 highlight2"><p class="b3">"เบียร์นำเข้าจากต่างประเทศ"</p></div>
+              <div class="rotate2 highlight2">
+                <p class="b3">"เบียร์นำเข้าจากต่างประเทศ"</p>
+              </div>
             </div>
 
             <p class="b4">
@@ -66,8 +73,9 @@
             </p>
           </div>
         </div>
+
         <div class="step" data-step-no="3">
-          <div class="data">
+          <div class="data data2">
             <div class="imgtext d-flex">
               <img
                 class="imgleft animated infinite pulse"
@@ -81,8 +89,7 @@
               </div>
             </div>
             <br />
-            <div class="imgtext d-flex mb-5">
-              <div class="imgleft"></div>
+            <div class="imgtext d-flex justify-content-center mb-5">
               <div class="text">
                 <p class="b3 highlight">บจก.บุญรอดบริวเวอรี่</p>
                 <div class="and d-flex align-items-center">
@@ -227,10 +234,6 @@ export default {
 </script>
 
 <style scoped>
-.bookmark-bg {
-  background-color: #e3eaf0;
-  overflow: hidden;
-}
 p {
   margin-bottom: 0;
 }
@@ -286,7 +289,7 @@ p {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .highlight2 {
-  color: #DE5850;
+  color: #de5850;
   background: white;
   border: 1px solid black;
   padding: 10px;
@@ -301,5 +304,95 @@ p {
 }
 .and .b1 {
   margin-right: 1rem;
+}
+.data2 img{
+  width: 100%;
+}
+
+/* ipad */
+@media (max-width: 821px) {
+  .left {
+    width: 60%;
+  }
+  .scrollama__steps {
+    width: 40%;
+  }
+  .step {
+    width: 100%;
+    padding: 0 1rem;
+    
+  }
+  .topicpic {
+    width: 90%;
+  }
+
+  .data1 p {
+    font-size: 0.9rem;
+  }
+  .data1 span {
+    font-size: 1.4rem;
+  }
+
+  .data2 .imgtext{
+    align-items: flex-start;
+  }
+  .data2 .imgtext img{
+    width: 30%;
+  }
+  .data2 p{
+    font-size: 1rem;
+  }
+  .data2 span{
+    font-size: 1.1rem;
+  }
+  .text .highlight{
+    font-size: .6rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 540px) {
+  .left {
+    width: 45%;
+    /* height: 80vh; */
+  }
+  .scrollama__steps {
+    width: 55%;
+  }
+  .step {
+    width: 100%;
+    padding: 0 1rem;
+    /* height: 80vh; */
+    
+  }
+  .topicpic {
+    width: 90%;
+  }
+
+  .data1 p {
+    font-size: .6rem;
+  }
+  .data1 span {
+    font-size: 1rem;
+  }
+  .data1 img{
+    width: 60%;
+  }
+
+  .data2 .imgtext{
+    align-items: flex-start;
+  }
+  .data2 .imgtext img{
+    width: 35%;
+  }
+  .data2 p{
+    font-size: .6rem;
+  }
+  .data2 span{
+    font-size: .8rem;
+  }
+  .text .highlight{
+    font-size: .6rem;
+  }
 }
 </style>

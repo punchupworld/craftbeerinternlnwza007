@@ -29,4 +29,20 @@ export default {
 .header img {
   width: 45%;
 }
+/* ipad */
+@media (max-width: 821px) {
+  .bookmark-bg {
+    height: 80vh;
+  }
+  .data img,
+  .header img {
+    width: 90%;
+  }
+}
+/* mobile */
+@media (max-width: 540px) {
+  .bookmark-bg {
+    height: 60vh;
+  }
+}
 </style>

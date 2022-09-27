@@ -1,9 +1,9 @@
 <template>
   <div>
     <section>
-      <book-mark-1></book-mark-1>
-      <book-mark-2></book-mark-2>
-      <random-component></random-component>
+      <book-mark-1 v-if="$store.state.start"></book-mark-1>
+      <book-mark-2 v-if="$store.state.start"></book-mark-2>
+      <random-component v-if="$store.state.start"></random-component>
       <book-mark-3 v-if="$store.state.count"></book-mark-3>
       <book-mark-4 v-if="$store.state.count"></book-mark-4>
       <book-mark-4-1 v-if="$store.state.count"></book-mark-4-1>

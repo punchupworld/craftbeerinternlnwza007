@@ -1,27 +1,32 @@
 <template>
   <div>
     <!-- part1 -->
-    <div class="part1 bookmark-bg2 container-fluid">
-      <div class="container p-4 text-center">
-        <h1>แถมไทยมีจำนวนโรงผลิตเบียร์มากกว่า</h1>
-        <div class="main-img">
-          <img src="@/assets/pics/frame4/4.4/main-img.svg" />
-          <vue-aos animation-class="zoomIn animated">
-            <div class="factory">
-              <img src="@/assets/pics/frame4/4.4/factory.svg" />
-            </div>
-          </vue-aos>
-        </div>
+    <div
+      class="part1 bookmark-bg2 container-fluid d-flex justify-content-center align-items-center"
+    >
+      <div>
+        <div class="container p-4 text-center">
+          <h1>แถมไทยมีจำนวนโรงผลิตเบียร์มากกว่า</h1>
+          <div class="main-img">
+            <img src="@/assets/pics/frame4/4.4/main-img.svg" />
+            <vue-aos animation-class="zoomIn animated">
+              <div class="factory">
+                <img src="@/assets/pics/frame4/4.4/factory.svg" />
+              </div>
+            </vue-aos>
+          </div>
 
-        <div class="alert">
-          <p class="b4 reminder">Reminder</p>
-          <p class="b5 reminder-detail">
-            ถึงแม้ว่าไทยจะได้เปรียบเรื่องจำนวนของโรงผลิตเบียร์
-            แต่ปริมาณการผลิตก็ยังเป็นรองเวียดนาม ยิ่งไปกว่านั้น แม้ส่วนแบ่งตลาด
-            <br />ของผู้ผลิตเบียร์รายใหญ่ในไทยและเวียดนามจะพอ ๆ กัน
-            แต่ผู้ผลิตรายย่อยในเวียดนามก็มีโอกาสแข่งขันในตลาดนี้มากกว่า<br />
-            ทั้งนี้เพราะเวียดนามมีกฎหมายการผลิตที่เปิดโอกาสให้ผู้ผลิตรายย่อยเข้าแข่งขันได้
-          </p>
+          <div class="alert">
+            <p class="b4 reminder">Reminder</p>
+            <p class="b5 reminder-detail">
+              ถึงแม้ว่าไทยจะได้เปรียบเรื่องจำนวนของโรงผลิตเบียร์
+              แต่ปริมาณการผลิตก็ยังเป็นรองเวียดนาม ยิ่งไปกว่านั้น
+              แม้ส่วนแบ่งตลาด
+              <br />ของผู้ผลิตเบียร์รายใหญ่ในไทยและเวียดนามจะพอ ๆ กัน
+              แต่ผู้ผลิตรายย่อยในเวียดนามก็มีโอกาสแข่งขันในตลาดนี้มากกว่า<br />
+              ทั้งนี้เพราะเวียดนามมีกฎหมายการผลิตที่เปิดโอกาสให้ผู้ผลิตรายย่อยเข้าแข่งขันได้
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -36,7 +41,7 @@
         ที่เปิดโอกาสให้ผู้ผลิตรายย่อยเข้าแข่งขันได้
       </h2>
       <div class="row hand">
-        <div class="left col-6 d-flex flex-column">
+        <div class="left col-lg-6 col-md-12 d-flex flex-column">
           <img src="@/assets/pics/frame4/4.5/th.svg" class="flag m-auto" />
           <p class="b6 mt-5">
             ผู้ผลิตรายย่อยไม่สามารถผลิตคราฟต์เบียร์ในประเทศไทยได้ <br />
@@ -44,23 +49,20 @@
             ใบอนุญาตโรงต้มเบียร์ขนาดเล็กที่มีเงื่อนไขว่า…
           </p>
           <!-- <vue-aos animation-class="slideInUp animated"> -->
-            <img src="@/assets/pics/frame4/4.5/hand_1.svg" class="hand1" />
+          <img src="@/assets/pics/frame4/4.5/hand_1.svg" class="hand1" />
           <!-- </vue-aos> -->
         </div>
-        <div class="right col-6 d-flex flex-column">
+        <div class="right col-lg-6 col-md-12 d-flex flex-column">
           <img src="@/assets/pics/frame4/4.5/vn.svg" class="flag m-auto" />
           <!-- <vue-aos animation-class="slideInRight animated"> -->
-            <img
-              src="@/assets/pics/frame4/4.5/hand_2.svg"
-              class="hand2 m-auto"
-            />
+          <img src="@/assets/pics/frame4/4.5/hand_2.svg" class="hand2 m-auto" />
           <!-- </vue-aos> -->
         </div>
       </div>
     </div>
 
     <!-- part3 -->
-    <div class="bookmark-bg2 container-fluid">
+    <div class="part3 bookmark-bg2 container-fluid">
       <div class="container p-4">
         <div class="data text-center">
           <img src="@/assets/pics/frame4/4.6/top.svg" />
@@ -113,7 +115,7 @@ export default {
   padding: 5rem;
 }
 .main-img {
-  margin: 3rem;
+  margin-top: 3rem;
   position: relative;
 }
 .main-img img {
@@ -163,7 +165,7 @@ export default {
   top: 0;
   left: 0;
   position: absolute;
-  transform: rotate(-5deg) translate(100%, 0px);
+  transform: rotate(-5deg) translateY(-20px);
 }
 .reminder-detail {
   background: white;
@@ -196,5 +198,73 @@ span {
 .left {
   border: none;
   border-right: 5px dotted #8abbe8;
+}
+
+/* ipad */
+
+@media (max-width: 821px) {
+  .data {
+    padding: 2rem;
+  }
+  .data img {
+    width: 3rem;
+  }
+  .text-white h3 {
+    font-size: 1.3rem;
+  }
+  .text-main h1 {
+    font-size: 1.5rem;
+  }
+  .part1 {
+    height: 90vh;
+  }
+  .main-img img {
+    width: 100%;
+  }
+  .factory {
+    margin-bottom: 5rem;
+  }
+  .left {
+    border-right: hidden;
+  }
+  .part1 {
+    height: 100vh;
+    padding: 1rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 540px) {
+  .factory {
+    margin-bottom: 0rem;
+  }
+  .reminder,
+  .reminder-detail {
+    font-size: 0.7rem;
+  }
+  .reminder {
+    transform: rotate(-5deg) translateY(0);
+  }
+  .topic-text {
+    font-size: 1rem;
+  }
+  .data{
+    padding: 2rem 0 2rem 0;
+  }
+  .data img{
+    width: 10%;
+  }
+  .text-white h3 {
+    font-size: .8rem;
+  }
+  .text-main h1 {
+    font-size: 1rem;
+  }
+  
+}
+@media (max-width: 375px) {
+  .reminder-detail {
+    font-size: 0.5rem;
+  }
 }
 </style>

@@ -9,11 +9,11 @@
 
         <!-- body -->
         <div class="row mb-5">
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-md-5 text-center">
             <p class="b4">ข้อมูลจาก</p>
           </div>
 
-          <div class="col-5">
+          <div class="alltext ol-lg-5 col-md-6">
             <ul>
               <li class="b5" v-for="(item, index) in nameweb" :key="index">
                 {{ item }}
@@ -37,11 +37,11 @@
             <br />
           </div>
 
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-md-5 text-center">
             <p class="b4">หน่วยงานและองค์กร</p>
           </div>
 
-          <div class="col-5">
+          <div class="col-lg-5 col-md-6">
             <ul>
               <li class="b5" v-for="(item, index) in companies" :key="index">
                 {{ item }}
@@ -51,11 +51,11 @@
             <br />
           </div>
 
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-md-5 text-center">
             <p class="b4">ผู้ให้สัมภาษณ์</p>
           </div>
 
-          <div class="col-5">
+          <div class="col-lg-5 col-md-6">
             <ul>
               <li class="b5" v-for="(item, index) in interviewee" :key="index">
                 {{ item }}
@@ -65,11 +65,11 @@
             <br />
           </div>
 
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-md-5 text-center">
             <p class="b4">เพจ Facebook</p>
           </div>
 
-          <div class="col-5">
+          <div class="col-lg-5 col-md-6">
             <ul>
               <li class="b5" v-for="(item, index) in pages" :key="index">
                 {{ item }}
@@ -125,5 +125,19 @@ export default {
 }
 p {
   margin-bottom: 0;
+}
+/* mobile */
+@media (max-width: 540px){
+  .b4{
+    font-size: 17px;
+    margin-bottom: 2rem;
+  }
+  .b5{
+    /* margin: 2rem; */
+    font-size: 13px;
+  }
+  .alltext{
+    padding: 2rem;
+  }
 }
 </style>

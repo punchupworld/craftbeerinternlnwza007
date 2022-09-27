@@ -1,7 +1,7 @@
 <template>
   <div>
       <cover-component></cover-component>
-      <shelf-chart></shelf-chart>
+      <shelf-chart v-if="$store.state.start"></shelf-chart>
   </div>
 </template>
 
