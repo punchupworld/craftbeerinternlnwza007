@@ -35,7 +35,7 @@
               target="_blank"
               ><img class="icon" src="@/assets/pics/twitter_icon.svg" alt=""
             /></a>
-            <img class="icon" src="@/assets/pics/line_icon.svg" alt="" />
+            <!-- <img class="icon" src="@/assets/pics/line_icon.svg" alt="" /> -->
           </div>
         </div>
       </div>

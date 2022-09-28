@@ -345,11 +345,24 @@ body {
   }
   .scroll-to {
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     left: 0;
     right: 0;
+    margin-bottom: 1rem;
+  }
+  .scroll-to p{
+    font-size: 1rem;
   }
 }
+
+/* my phone */
+@media (max-width: 539px){
+    .hhh .text-second {
+    transform: translateY(130px);
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 376px) {
   .hhh .text-second {
     transform: translateY(110px);
