@@ -180,7 +180,7 @@ export default {
   object-fit: cover;
   background-color: #e3eaf0;
   background-repeat: no-repeat;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 .col-7 img {
   width: 100%;
