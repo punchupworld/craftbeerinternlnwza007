@@ -99,7 +99,7 @@
         </div>
       </div>
 
-      <div class="scroll-to text-center">
+      <div class="scroll-to text-center animated infinite bounce">
         <box-icon name="down-arrow-alt"></box-icon>
         <p class="b4">
           SCROLL<br />
@@ -132,7 +132,7 @@ export default {
     closePopup() {
       document.getElementsByTagName("body")[0].style.overflow = "hidden";
       this.$store.commit("startResult", true);
-      document.getElementsByTagName("body")[0].style.overflow = "unset";
+      document.getElementsByTagName("body")[0].style.overflow = "hidden auto";
       this.toggle = !this.toggle;
     },
     initInteract: function (selector) {

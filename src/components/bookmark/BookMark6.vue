@@ -4,7 +4,7 @@
     <div
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
     >
-      <div class="container text-center cover animated infinite bounce">
+      <div class="container text-center cover">
         <img
           src="@/assets/pics/frame4/4.2/topic.svg"
           alt=""

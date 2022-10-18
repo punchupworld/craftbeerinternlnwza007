@@ -83,9 +83,9 @@ export default {
 </script>
 
 <style scoped>
-.bookmark-bg {
+/* .bookmark-bg {
   overflow: hidden;
-}
+} */
 span {
   /* transform: rotate(20deg) !important; */
   -webkit-text-stroke: 0.1px black;

@@ -624,7 +624,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #yeast_1,
 #yeast_2,
 #malt_1,

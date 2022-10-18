@@ -80,14 +80,14 @@
       </div>
 
       <div class="text text-center">
-        <h2>พักเสร็จแล้ว</h2>
-        <h1>ไปต่อกันเลย !</h1>
+        <h2>หยิบเบียร์ของคุณแล้ว</h2>
+        <h1>ไปรู้จักคราฟเบียร์กันต่อเลย !</h1>
       </div>
     </div>
 
     <!-- ทำไทม์ไลน์แล้วมาเปิดด้วย -->
 
-    <!-- <div
+    <div
       class="bookmark-bg2 p-5 d-flex justify-content-center align-items-center"
       v-if="$store.state.count"
     >
@@ -103,11 +103,18 @@
           <img src="@/assets/pics/frame3/3.5/smalltimeline.svg" alt="" />
         </div>
       </div>
-    </div> -->
+    </div>
 
-
-
-
+    <!-- timeline ใหญ่ -->
+    <div class="bookmark-bg2 big-container" v-if="$store.state.count">
+      <!-- <img
+        class="big-timeline"
+        src="@/assets/pics/frame3/3.5/bigTimeline.svg"
+        alt=""
+      /> -->
+      <timeline class="big-timeline"></timeline>
+      <!-- <third-svg class="big-timeline"></third-svg> -->
+    </div>
 
     <!-- <div
       class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
@@ -161,8 +168,11 @@
 
 <script>
 import craftBeers from "@/assets/data/craft-beers";
+import Timeline from '../svgimage/Timeline.vue';
+import ThirdSvg from '../svgimage/ThirdSvg.vue';
 
 export default {
+  components: { Timeline, ThirdSvg },
   name: "RandomComponent",
   data() {
     return {
@@ -181,8 +191,8 @@ export default {
       this.$store.commit("showResult", true);
       setTimeout(() => {
         document.getElementById("test").scrollIntoView();
-        document.getElementsByTagName("body")[0].style.overflow = "unset";
-      }, 500);
+        document.getElementsByTagName("body")[0].style.overflow = "hidden auto";
+      }, 1500);
 
       //   console.log(JSON.stringify(this.list));
     },
@@ -348,6 +358,17 @@ export default {
 .timeline img {
   width: 100%;
 }
+/* big timeline */
+.big-container {
+  border: 1px solid red;
+  width: 100vw;
+  overflow-x: scroll;
+}
+.big-timeline {
+  border: 1px solid green;
+  height: 100%;
+}
+
 /* ipad */
 @media (max-width: 821px) {
   .bookmark-bg2 {
@@ -374,7 +395,7 @@ export default {
     width: 100%;
     height: 100%;
   }
-  .right1{
+  .right1 {
     padding: 0rem 2rem;
   }
 }

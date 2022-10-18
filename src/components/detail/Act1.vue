@@ -30,12 +30,18 @@
           <p class="b5">คอนเซปต์ของพ.ร.บ.สุราก้าวหน้า คือ</p>
 
           <div class="part2 d-flex flex-column">
-            <img src="@/assets/pics/frame4/4.6/top.svg" class="mt-lg-5 mb-lg-5 mt-4 mb-4" />
+            <img
+              src="@/assets/pics/frame4/4.6/top.svg"
+              class="mt-lg-5 mb-lg-5 mt-4 mb-4"
+            />
             <h1>
               ยกเลิกกฎหมายที่เป็นอุปสรรคต่อการผลิตสุรา <br />
               หรือขัดขวางไม่ให้ประชาชนประกอบอาชีพผลิตสุราได้อย่างเสรี
             </h1>
-            <img src="@/assets/pics/frame4/4.6/bot.svg" class="mt-lg-5 mb-lg-5 mt-4 mb-4" />
+            <img
+              src="@/assets/pics/frame4/4.6/bot.svg"
+              class="mt-lg-5 mb-lg-5 mt-4 mb-4"
+            />
           </div>
 
           <div class="part3 text-center m-auto">
@@ -157,6 +163,10 @@ export default {
 .bookmark-bg {
   width: 100vw;
   height: 100%;
+  overflow: hidden;
+}
+.bookmark-bg2 {
+  overflow: hidden;
 }
 .bookmark-bg2,
 .bookmark-bg3,
@@ -307,10 +317,10 @@ span {
   }
 }
 @media (max-width: 540px) {
-  .maintext{
+  .maintext {
     padding: 2rem;
   }
-  .maintext h1{
+  .maintext h1 {
     font-size: 1rem;
   }
   .part2 h1 {
@@ -344,6 +354,10 @@ span {
     height: 34%;
     margin: 1rem 1rem;
     padding: 1rem;
+  }
+  .t-black,
+  .t-white {
+    font-size: 1rem;
   }
 }
 </style>
