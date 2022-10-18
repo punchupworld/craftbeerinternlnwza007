@@ -18,7 +18,7 @@
             :options="options"
           ></b-form-select>
         </div>
-        <p class="grey b4 mt-2 mb-4">วางเมาส์ที่รูปเพื่อดูรายละเอียด</p>
+        <p class="grey b4 mt-2 mb-4">วางเมาส์ที่องค์ประกอบบางส่วนของรูปเพื่อดูรายละเอียด</p>
 
         <div class="imgchoose m-auto">
           <first-svg v-if="selected == 0"></first-svg>
