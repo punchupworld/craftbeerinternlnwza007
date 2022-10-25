@@ -86,7 +86,7 @@
         <div
           class="hhh col-lg-5 col-md-12 d-flex flex-column justify-content-center"
         >
-          <vue-aos animation-class="fadeInUp animated">
+          <vue-aos animation-class="fadeInUp animated" v-if="toggle == false">
             <div class="topic">
               <h1 class="text-topic">คราฟต์เบียร์ไทย</h1>
               <h1 class="text-topic">ฝันไกล ไป<span>(ไม่)</span>ถึง</h1>
@@ -251,6 +251,7 @@ export default {
   padding: 1rem;
   width: fit-content;
   margin: auto;
+  font-size: 2.5rem;
 }
 .text-topic:nth-child(1) {
   transform: translateX(-20%) rotate(4deg);
@@ -264,6 +265,7 @@ export default {
 }
 .text-second {
   transform: translateY(180%);
+  font-size: 1.5rem;
 }
 
 /* the slider bar */
@@ -350,14 +352,14 @@ body {
     right: 0;
     margin-bottom: 1rem;
   }
-  .scroll-to p{
+  .scroll-to p {
     font-size: 1rem;
   }
 }
 
 /* my phone */
-@media (max-width: 539px){
-    .hhh .text-second {
+@media (max-width: 539px) {
+  .hhh .text-second {
     transform: translateY(130px);
     font-size: 1rem;
   }

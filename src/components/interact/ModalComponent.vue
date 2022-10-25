@@ -114,7 +114,7 @@
               ภายในอาคารท่าอากาศยานนานาชาติ)
             </p>
 
-            <img src="@/assets/pics/frame4/4.7/print.svg" class="print" />
+            <img src="@/assets/pics/frame4/4.7/print.png" class="print" />
 
             <div class="last">
               <p class="b4 text-start">ผลกระทบ :</p>

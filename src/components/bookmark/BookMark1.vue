@@ -5,7 +5,7 @@
       <div class="proi text-center">
         <h1>
           ยังสงสัยอยู่ใช่ไหม <br />
-          ว่าเบียร์ทั่วไปแตกต่างยังไงจากคราฟต์เบียร์ยังไง<span> ? </span>
+          ว่าเบียร์ทั่วไปแตกต่างจากคราฟต์เบียร์ยังไง<span> ? </span>
         </h1>
         <div class="choose d-flex justify-content-center">
           <div class="d-flex justify-content-center align-items-center">
