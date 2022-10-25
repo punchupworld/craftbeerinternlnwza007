@@ -52,18 +52,18 @@
         </div>
 
         <div class="text-center m-2">
-          <img
-            src="@/assets/pics/profile/restart.svg"
-            alt=""
-            class="footer mb-2 mb-md-4"
-          />
+          <a href="#"
+            ><img
+              src="@/assets/pics/profile/restart.svg"
+              alt=""
+              class="footer mb-2 mb-md-4"
+          /></a>
           <div class="textfoot b6">BACK TO HOME</div>
           <div class="textfoot b6">กลับสู่หน้าแรก</div>
           <img src="@/assets/pics/profile/PU.svg" alt="" class="PU mt-5" />
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -74,7 +74,7 @@ export default {
 </script>
 
 <style scoped>
-.bookmark-bg{
+.bookmark-bg {
   background: #f8ef8f;
   width: 100vw;
   height: 100%;
@@ -127,32 +127,33 @@ export default {
   .profile img {
     width: 50%;
   }
-  .header{
+  .header {
     width: 50%;
     margin-bottom: 5%;
   }
-  .footer{
+  .footer {
     width: 6%;
   }
 }
 /* mobile */
-@media (max-width: 540px){
-  .profile img{
+@media (max-width: 540px) {
+  .profile img {
     width: 70%;
   }
-  .detail .b4{
+  .detail .b4 {
     font-size: 14px;
   }
-  .detail .b6{
+  .detail .b6 {
     font-size: 12px;
   }
-  .position,.position2{
-    font-size: .8rem;
+  .position,
+  .position2 {
+    font-size: 0.8rem;
   }
-  .textfoot{
-    font-size: .7rem;
+  .textfoot {
+    font-size: 0.7rem;
   }
-  .PU{
+  .PU {
     width: 30%;
   }
 }

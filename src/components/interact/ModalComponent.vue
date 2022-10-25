@@ -42,10 +42,10 @@
       </div>
 
       <!-- modal -->
-      <b-modal id="modal-1" size="xl" hide-footer>
+      <b-modal id="modal-1" size="xl" scrollable hide-footer>
         <div class="row p-3">
           <div
-            class="modalpic col-lg-5 col-md-12 d-flex justify-content-center align-items-center"
+            class="modalpic col-lg-5 col-md-12 d-flex justify-content-center align-items-start"
           >
             <img src="@/assets/pics/frame4/4.7/card 1.svg" alt="" />
           </div>
@@ -73,8 +73,34 @@
 
             <div class="line mb-4 mt-4 m-auto"></div>
 
+            <div class="d-flex justify-content-center flex-column">
+              <p class="yellowtext b5 m-0">
+                ในสิงคโปร์และมาเลเซียก็มีการกำหนดเวลาในการซื้อขายเบียร์<br />
+              </p>
+              <p class="yellowtext b5 m-0">
+                เพื่อจำกัดปริมาณการดื่มเช่นเดียวกับไทย แต่ในญี่ปุ่นไม่มี<br />
+              </p>
+              <p class="yellowtext b5 m-0">
+                การกำหนดเวลาซื้อขาย รัฐบาลจึงหันไปเข้มงวดในการบังคับ<br />
+              </p>
+              <p class="yellowtext b5 m-0">
+                ใช้กฎหมายที่เกี่ยวข้องกับการดื่ม เช่น การดื่มแล้วขับ<br />
+              </p>
+              <p class="yellowtext b5 m-0">
+                แต่ประเทศไทยไม่ใช่ประเทศเดียวที่มีการห้ามจำหน่าย<br />
+              </p>
+              <p class="yellowtext b5 m-0">
+                เครื่องดื่มแอลกอฮอล์ในวันสำคัญทางศาสนา<br />
+              </p>
+              <p class="yellowtext b5 m-0">
+                รัฐบางรัฐในอินเดียก็มีการงดจำหน่ายในช่วงเทศกาลสำคัญทางศาสนาเช่นกัน
+              </p>
+            </div>
+
             <div class="last">
-              <p class="b4 text-start">ผลกระทบ :</p>
+              <div class="d-flex justify-content-center">
+                <p class="effects1 b4 text-center mt-3 p-2">ผลกระทบ</p>
+              </div>
 
               <ul class="text-start">
                 <li class="b5">ผู้ขายแอลกอฮอล์รายเล็กสูญเสียรายได้</li>
@@ -117,7 +143,9 @@
             <img src="@/assets/pics/frame4/4.7/print.png" class="print" />
 
             <div class="last">
-              <p class="b4 text-start">ผลกระทบ :</p>
+              <div class="d-flex justify-content-center">
+                <p class="effects1 b4 text-start p-2">ผลกระทบ</p>
+              </div>
 
               <ul class="text-start">
                 <li class="b5">
@@ -149,8 +177,9 @@
               ปิดโอกาสรายย่อย
             </h2>
             <p class="b5">
-              มาตรา 32 ของ พ.ร.บ.ควบคุมเครื่องดื่มแอลกอฮอล์ <br />
-              พ.ศ. 2551 บัญญัติว่า
+              กฎหมายควบคุมเครื่องดื่มแอลกอฮอล์ พ.ศ. 2551<br />
+              ประเทศไทยระบุว่าห้ามโฆษณาเครื่องดื่มแอลกอฮอล์<br />
+              เพราะ ม.32 บัญญัติว่า
             </p>
 
             <div class="main-topic d-flex flex-column">
@@ -159,10 +188,22 @@
                 class="luknam m-4 align-self-center"
               />
               <p class="b4">
-                ห้ามมิให้ผู้ใดโฆษณาเครื่องดื่มแอลกอฮอล์ <br />
-                ห้ามแสดงชื่อหรือเครื่องหมายของเครื่องดื่ม <br />
-                แอลกอฮอล์ อันเป็นการอวดอ้างสรรพคุณ <br />
-                หรือชักชวนใจให้ผู้อื่นดื่มโดยตรงหรือโดยอ้อม
+                มาตรา ๓๒<br />
+                ห้ามมิให้ผู้ใดโฆษณาเครื่องดื่มแอลกอฮอล์หรือแสดงชื่อหรือเครื่องหมายของเครื่องดื่มแอลกอฮอล์อันเป็นการ<br />
+                อวดอ้างสรรพคุณหรือชักจูงใจให้ผู้อื่นดื่มโดยตรงหรือ<br />
+                โดยอ้อม การโฆษณาหรือประชาสัมพันธ์ใด ๆ<br /><br />
+
+                โดยผู้ผลิตเครื่องดื่มแอลกอฮอล์ทุกประเภทให้กระทำได้<br />
+                เฉพาะการให้ข้อมูลข่าวสารและความรู้เชิง<br />
+                สร้างสรรค์สังคม โดยไม่มีการปรากฏภาพของสินค้า<br />
+                หรือบรรจุภัณฑ์ของเครื่องดื่มแอลกอฮอล์นั้น<br />
+                เว้นแต่เป็นการปรากฏของภาพสัญลักษณ์ของ<br />
+                เครื่องดื่มแอลกอฮอล์หรือสัญลักษณ์ของบริษัทผู้ผลิต<br />
+                เครื่องดื่มแอลกอฮอล์นั้นเท่านั้น<br /><br />
+
+                ทั้งนี้ ตามที่กำหนดใน กฎกระทรวงบทบัญญัติใน<br />
+                วรรคหนึ่งวรรคสองมิให้ใช้บังคับกับการโฆษณา<br />
+                ที่มีต้นกำเนิดนอกราชอาณาจักร
               </p>
               <img
                 src="@/assets/pics/frame4/4.7/bot.svg"
@@ -170,19 +211,14 @@
               />
             </div>
 
-            <p class="b5">
-              ดังนั้นผู้ประกอบการ<span>ไม่สามารถโฆษณา แสดงชื่อหรือโลโก้</span
-              ><br />
-              หรือแม้กระทั่ง<span>พูดถึงรสชาติของเครื่องดื่มแอลกอฮอล์ได้</span
-              ><br />
-              เพราะอาจเข้าข่ายความผิดแต่อย่างไรก็ตามกฎหมายนี้ <br />
-              ถูกบังคับใช้ในราชอาณาจักรไทยเท่านั้น
-            </p>
+            
 
             <img src="@/assets/pics/frame4/4.7/lisa.svg" class="lisa" />
 
             <div class="last">
-              <p class="b4 text-start">ผลกระทบ :</p>
+              <div class="d-flex justify-content-center">
+                <p class="effects1 b4 text-start p-2">ผลกระทบ</p>
+              </div>
 
               <ul class="text-start">
                 <li class="b5">
@@ -269,6 +305,10 @@ h4 {
 .last {
   margin-left: 3rem;
 }
+.last .effects1 {
+  border: 1px solid black;
+  width: fit-content;
+}
 .print {
   width: 50%;
   margin: auto;
@@ -301,6 +341,11 @@ span {
   background-image: linear-gradient(#62a083, #2c2828);
 }
 
+/* fix modal */
+.yellowtext {
+  background-color: #f4cc2d;
+  width: fit-content;
+}
 /* ipad */
 @media (max-width: 821px) {
   .bookmark-bg2 {
