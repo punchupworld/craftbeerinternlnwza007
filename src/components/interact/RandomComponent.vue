@@ -168,8 +168,8 @@
 
 <script>
 import craftBeers from "@/assets/data/craft-beers";
-import Timeline from '../svgimage/Timeline.vue';
-import ThirdSvg from '../svgimage/ThirdSvg.vue';
+import Timeline from "../svgimage/Timeline.vue";
+import ThirdSvg from "../svgimage/ThirdSvg.vue";
 
 export default {
   components: { Timeline, ThirdSvg },
@@ -360,12 +360,10 @@ export default {
 }
 /* big timeline */
 .big-container {
-  border: 1px solid red;
   width: 100vw;
   overflow-x: scroll;
 }
 .big-timeline {
-  border: 1px solid green;
   height: 100%;
 }
 

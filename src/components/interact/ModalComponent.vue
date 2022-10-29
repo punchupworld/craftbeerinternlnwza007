@@ -73,7 +73,7 @@
 
             <div class="line mb-4 mt-4 m-auto"></div>
 
-            <div class="d-flex justify-content-center flex-column">
+            <div class="d-flex justify-content-center flex-column align-items-center">
               <p class="yellowtext b5 m-0">
                 ในสิงคโปร์และมาเลเซียก็มีการกำหนดเวลาในการซื้อขายเบียร์<br />
               </p>
