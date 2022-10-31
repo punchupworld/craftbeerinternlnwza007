@@ -15,20 +15,15 @@
               </div>
             </vue-aos>
           </div>
-
-          <div class="alert">
-            <p class="b4 reminder">Reminder</p>
-            <p class="b5 reminder-detail">
-              ถึงแม้ว่าไทยจะได้เปรียบเรื่องจำนวนของโรงผลิตเบียร์
-              แต่ปริมาณการผลิตก็ยังเป็นรองเวียดนาม ยิ่งไปกว่านั้น
-              แม้ส่วนแบ่งตลาด
-              <br />ของผู้ผลิตเบียร์รายใหญ่ในไทยและเวียดนามจะพอ ๆ กัน
-              แต่ผู้ผลิตรายย่อยในเวียดนามก็มีโอกาสแข่งขันในตลาดนี้มากกว่า<br />
-              ทั้งนี้เพราะเวียดนามมีกฎหมายการผลิตที่เปิดโอกาสให้ผู้ผลิตรายย่อยเข้าแข่งขันได้
-            </p>
-          </div>
         </div>
       </div>
+    </div>
+    <!-- alert -->
+    <div class="alert">
+      <h2 class="text-center">
+        ถึงแม้ว่าไทยจะได้เปรียบเรื่องจำนวนของโรงผลิตเบียร์<br />
+        <span>แต่ปริมาณการผลิตก็ยังเป็นรองเวียดนาม</span>
+      </h2>
     </div>
     <!-- part2 -->
     <div class="part2 bookmark-bg2 container-fluid text-center">
@@ -36,8 +31,10 @@
         <div class="blue-line"></div>
       </div>
       <h2 class="topic-text">
-        แต่ผู้ผลิตรายย่อยในเวียดนามกลับมีโอกาสแข่งขัน <br />
-        ในตลาดนี้มากกว่า เพราะเวียดนามมี<span>กฎหมายการผลิต</span> <br />
+        ยิ่งไปกว่านั้น แม้ส่วนแบ่งตลาดของ
+        ผู้ผลิตเบียร์รายใหญ่ในไทยและเวียดนามจะพอ ๆ กัน
+        แต่ผู้ผลิตรายย่อยในเวียดนามกลับมีโอกาสแข่งขันในตลาดนี้มากกว่า
+        เพราะเวียดนามมี<span>กฎหมายการผลิต</span>
         ที่เปิดโอกาสให้ผู้ผลิตรายย่อยเข้าแข่งขันได้
       </h2>
       <div class="row hand">
@@ -119,7 +116,7 @@ export default {
   position: relative;
 }
 .main-img img {
-  width: 40%;
+  width: 100%;
 }
 .factory {
   position: absolute;
@@ -152,27 +149,13 @@ export default {
   background: #8ABBE8;
 } */
 .alert {
-  position: relative;
-  margin-top: 5rem;
-}
-.reminder {
-  color: white;
-  background: #de5850;
-  border: 1px solid black;
-  width: fit-content;
-  margin: auto;
-  padding: 0.5rem 1rem;
-  top: 0;
-  left: 0;
-  position: absolute;
-  transform: rotate(-5deg) translateY(-20px);
-}
-.reminder-detail {
-  background: white;
-  border: 1px solid black;
-  padding: 1.5rem 1rem;
-  width: fit-content;
-  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("~@/assets/pics/frame4/4.3/bgcolor.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 5rem 10rem 5rem 10rem;
 }
 span {
   color: #de5850;
@@ -194,6 +177,7 @@ span {
 }
 .topic-text {
   margin-bottom: 4rem;
+  padding: 0 8rem 0 8rem;
 }
 .left {
   border: none;
@@ -203,6 +187,10 @@ span {
 /* ipad */
 
 @media (max-width: 821px) {
+  .alert {
+  height: 40vh;
+  padding: 5rem 7rem 5rem 7rem;
+}
   .data {
     padding: 2rem;
   }
@@ -216,7 +204,7 @@ span {
     font-size: 1.5rem;
   }
   .part1 {
-    height: 90vh;
+    height: 70vh !important;
   }
   .main-img img {
     width: 100%;
@@ -235,6 +223,13 @@ span {
 
 /* mobile */
 @media (max-width: 540px) {
+    .alert {
+  height: 30vh;
+  padding: 3rem 5rem 5rem 3rem;
+}
+.alert h2{
+  font-size: 1rem;
+}
   .factory {
     margin-bottom: 0rem;
   }
@@ -247,20 +242,21 @@ span {
   }
   .topic-text {
     font-size: 1rem;
+    margin-bottom: 4rem;
+    padding: 0 1rem 0 1rem;
   }
-  .data{
+  .data {
     padding: 2rem 0 2rem 0;
   }
-  .data img{
+  .data img {
     width: 10%;
   }
   .text-white h3 {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .text-main h1 {
     font-size: 1rem;
   }
-  
 }
 @media (max-width: 375px) {
   .reminder-detail {

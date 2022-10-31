@@ -5,12 +5,10 @@
       class="bookmark-bg2 container-fluid d-flex justify-content-center align-items-center"
     >
       <div class="container d-flex text-center flex-column p-lg-5">
-        <h4>นอกจากนี้ยังมีปัญหาอื่นๆ</h4>
-        <h4 class="pb-3">ที่ทำให้คราฟต์เบียร์ไทยย่ำอยู่กับที่</h4>
-        <div class="highlight">
-          <p class="b4 mb-0">สำรวจปัญหาอื่นๆ</p>
-        </div>
-        <p class="white b5 mt-2 mb-4">คลิกที่การ์ดเพื่ออ่าน</p>
+        <h2 class="text-white">
+          สำรวจปัญหาอื่น ๆ <br />ที่ทำให้คราฟต์เบียร์ไทยย่ำอยู่กับที่
+        </h2>
+        <p class="white b5 mt-2 mb-4">--- คลิกที่การ์ดเพื่ออ่าน ---</p>
 
         <div class="row">
           <div
@@ -73,7 +71,9 @@
 
             <div class="line mb-4 mt-4 m-auto"></div>
 
-            <div class="d-flex justify-content-center flex-column align-items-center">
+            <div
+              class="d-flex justify-content-center flex-column align-items-center"
+            >
               <p class="yellowtext b5 m-0">
                 ในสิงคโปร์และมาเลเซียก็มีการกำหนดเวลาในการซื้อขายเบียร์<br />
               </p>
@@ -122,11 +122,15 @@
             <img src="@/assets/pics/frame4/4.7/card 2.svg" />
           </div>
           <div class="col-lg-7 col-md-12 p-4 d-flex flex-column text-center">
-            <h2 class="topicmodal mb-4">คราฟต์เบียร์ไทย ราคาไม่น่ารัก</h2>
+            <h1 class="topicmodal">คราฟต์เบียร์ไทย ราคาไม่น่ารัก</h1>
+            <h4 class="subtopicmodal mb-4">
+              คราฟต์เบียร์ไทยที่นำเข้าจากต่างประเทศต้องเสียภาษีนำเข้า 60%
+            </h4>
+
             <p class="b5">
               รัฐบาลใช้พ.ร.บ. ภาษีสรรพสามิตเป็นเครื่องมือเพื่อให้ <br />
               ประชาชนลดการบริโภคเครื่องดื่มแอลกอฮอล์ <br />
-              แต่วิธีนี้ไม่ค่อยได้ผล เพราะคนไทยมีความยืดหยุ่นต่อการบริโภคสูง
+              <span class="redunderline">แต่วิธีนี้มีประสิทธิภาพและได้ผลจริงหรือ?</span>
             </p>
 
             <p class="b4">ต้นทุนของคราฟต์เบียร์มาจากอะไร ?</p>
@@ -211,8 +215,6 @@
               />
             </div>
 
-            
-
             <img src="@/assets/pics/frame4/4.7/lisa.svg" class="lisa" />
 
             <div class="last">
@@ -255,9 +257,7 @@ export default {
   height: 100vh;
   background-color: #62a083;
 }
-h4 {
-  color: white;
-}
+
 .cardd {
   background: none;
   border: none;
@@ -269,14 +269,6 @@ h4 {
 }
 .cardd img:hover {
   transform: rotate(2deg);
-}
-
-.highlight {
-  background-color: white;
-  border: 1px solid black;
-  width: max-content;
-  padding: 0.5rem;
-  margin: auto;
 }
 .b4 {
   color: black;
@@ -299,8 +291,16 @@ h4 {
 .modalpic img {
   width: 100%;
 }
-.topicmodal {
+.topicmodal,
+.subtopicmodal {
   color: #de5850;
+}
+.subtopicmodal {
+  font-size: 1.2rem;
+}
+.redunderline{
+  text-decoration: underline 2px red;
+  background: none;
 }
 .last {
   margin-left: 3rem;
@@ -381,6 +381,9 @@ span {
   }
   .main-topic p {
     font-size: 1rem;
+  }
+  .print{
+    width: 100%;
   }
 }
 </style>

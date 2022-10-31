@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="gradient"></div>
+
     <div
-      class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
+      class="bg2 bookmark-bg container-fluid d-flex flex-column justify-content-center"
     >
       <div class="container text-center cover">
         <img
@@ -11,15 +12,15 @@
           class="big-topic"
         />
       </div>
-    </div>
-
-    <div class="bg2 bookmark-bg container-fluid d-flex justify-content-center">
-      <div class="content2 container text-center p-5">
-        <h1>
-          90% ของส่วนแบ่งในตลาด <br />
+      <div class="content2 container text-center p-lg-5 p-sm-1 p-1 d-flex flex-column align-items-center">
+        <img
+          src="@/assets/pics/frame4/4.3/chart.svg"
+          class="chart mt-5 text-center"
+        />
+        <p class="describ b4 mt-5">
+          90% ของส่วนแบ่งในตลาด<br />
           ครอบครองโดยเจ้าใหญ่เหมือนกัน
-        </h1>
-        <img src="@/assets/pics/frame4/4.3/chart.svg" class="chart mt-5" />
+        </p>
       </div>
     </div>
   </div>
@@ -36,12 +37,23 @@ export default {
   background-color: #e3eaf0;
 }
 .bg2 {
-  background-image: url("~@/assets/pics/frame4/4.3/bgcolor.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+.big-topic{
+  width: 70%;
+}
+.content2 {
+  width: 100%;
+  height: 100%;
+}
 .chart {
-  width: 50%;
+  height: 80%;
+}
+.describ{
+  background: white;
+  border: 1px solid;
+  padding: 1rem 2rem;
 }
 .cover {
   width: 60%;
@@ -60,11 +72,11 @@ export default {
     background-color: #e3eaf0;
     background-image: none;
   }
-  .chart {
-    width: 70%;
+  .big-topic{
+    width: 100%;
   }
-  .content2 {
-    align-self: center;
+  .chart {
+    width: 50%;
   }
   .gradient {
     height: 30vh;
@@ -73,17 +85,24 @@ export default {
 
 /* mobile */
 @media (max-width: 540px) {
+  .bookmark-bg{
+    height: unset;
+  }
   .content2 h1 {
     font-size: 1.3rem;
   }
   .container {
     width: 100%;
   }
-  .container .big-topic{
+  .container .big-topic {
     width: 80%;
   }
-  .chart{
-    width: 90%;
+  .chart {
+    width: 50%;
+  }
+  .describ{
+    font-size: .5rem;
+    padding: 1rem 1rem;
   }
 }
 </style>

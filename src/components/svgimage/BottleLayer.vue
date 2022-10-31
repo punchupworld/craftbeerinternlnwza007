@@ -15,7 +15,10 @@
     <p class="textall text5 b4" v-if="active == 5">
       -------------------- Stout (21)
     </p>
-    <div class="hand d-flex justify-content-center align-items-center" v-if="active == 0">
+    <div
+      class="hand d-flex justify-content-center align-items-center"
+      v-if="active == 0"
+    >
       <img src="@/assets/pics/frame3/bottle/bottle1/click.png" alt="" />
       <p class="b5">วางเมาส์บนขวด<br />เพื่ออ่านรายละเอียด</p>
     </div>
@@ -378,21 +381,29 @@ export default {
 </script>
 
 <style scoped>
-#pale_ale,#ipa,#ale,#wheat_beer,#stout{
-    opacity: .5;
-    transition: .3s ease;
+#pale_ale,
+#ipa,
+#ale,
+#wheat_beer,
+#stout {
+  opacity: 0.5;
+  transition: 0.3s ease;
 }
-#pale_ale:hover,#ipa:hover,#ale:hover,#wheat_beer:hover,#stout:hover{
-    opacity: 1;
+#pale_ale:hover,
+#ipa:hover,
+#ale:hover,
+#wheat_beer:hover,
+#stout:hover {
+  opacity: 1;
 }
-.hover-rela{
+.hover-rela {
   width: 100%;
   height: 100%;
 }
-.svg-part{
+.svg-part {
 }
-svg{
-    width: 35%;
+svg {
+  width: 35%;
 }
 .hand {
   position: absolute;
@@ -427,5 +438,44 @@ svg{
 }
 .text5 {
   bottom: 12%;
+}
+@media (max-width: 540px) {
+  .hand {
+    width: 40%;
+    transform: translateX(20%);
+  }
+  .hand img {
+    width: 20%;
+  }
+  .hand p {
+    font-size: 0.5rem;
+  }
+  .textall {
+    font-size: 0.7rem;
+  }
+  .text1,
+  .text3,
+  .text5 {
+    right: 5%;
+  }
+  .text2,
+  .text4 {
+    left: 5%;
+  }
+  .text1 {
+    top: 30%;
+  }
+  .text2 {
+    top: 47%;
+  }
+  .text3 {
+    top: 57%;
+  }
+  .text4 {
+    bottom: 25%;
+  }
+  .text5 {
+    bottom: 18%;
+  }
 }
 </style>

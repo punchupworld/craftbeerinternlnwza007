@@ -138,9 +138,8 @@ span {
   .end2 {
     font-size: 0.8rem !important;
   }
-
   .part2{
-    height: 60vh;
+    height: 50vh;
   }
   .hello h2{
     font-size: .9rem;

@@ -338,6 +338,9 @@ body {
     height: 1.5rem;
     font-size: 1rem;
   }
+  .text-topic{
+    font-size: 2rem;
+  }
   .hhh {
     transform: translateY(-110%);
   }
