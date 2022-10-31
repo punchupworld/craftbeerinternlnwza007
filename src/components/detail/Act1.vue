@@ -288,8 +288,14 @@ span {
 }
 .datacontent p {
   margin-bottom: 0;
+  font-size: 1.2rem;
 }
-
+/* font bug */
+@media (max-width: 2089px) {
+  .datacontent p {
+  font-size: 1.4rem;
+}
+}
 /* ipad */
 @media (max-width: 821px) {
   .part2 h1 {
