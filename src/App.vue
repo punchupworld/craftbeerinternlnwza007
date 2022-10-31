@@ -1,7 +1,7 @@
 <template>
   <div>
     <section >
-      <!-- <div class="logo-pu"><img src="@/assets/pics/pulogo.svg" alt=""></div> -->
+      <div class="logo-pu"><a href="#"><img src="@/assets/pics/pulogo.svg" alt=""></a></div>
       <intro-component></intro-component>
       <interaction-component></interaction-component>
       <problem-component v-if="$store.state.count"></problem-component>
@@ -110,5 +110,12 @@ button.close {
 .modal-header .close {
     padding: 1rem;
     margin: -1rem -1rem -1rem auto;
+}
+.logo-pu{
+  position: absolute;
+  z-index: 1;
+}
+.logo-pu img{
+  position: fixed;
 }
 </style>

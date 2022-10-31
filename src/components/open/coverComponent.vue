@@ -59,7 +59,7 @@
         class="disclaimer d-flex justify-content-center align-items-center"
         v-if="toggle == true"
       >
-        <vue-aos animation-class="fadeInUp animated">
+        <vue-aos animation-class="animate__backInDown animated">
           <div class="imgdis">
             <div
               class="close-button d-flex justify-content-center align-items-center b2"
