@@ -107,12 +107,8 @@
 
     <!-- timeline ใหญ่ -->
     <div class="bookmark-bg2 big-container" v-if="$store.state.count">
-      <!-- <img
-        class="big-timeline"
-        src="@/assets/pics/frame3/3.5/bigTimeline.svg"
-        alt=""
-      /> -->
-      <timeline class="big-timeline"></timeline>
+      <!-- <timeline class="big-timeline"></timeline> -->
+      <timeline-2 class="big-timeline"></timeline-2>
       <!-- <third-svg class="big-timeline"></third-svg> -->
     </div>
 
@@ -170,9 +166,10 @@
 import craftBeers from "@/assets/data/craft-beers";
 import Timeline from "../svgimage/Timeline.vue";
 import ThirdSvg from "../svgimage/ThirdSvg.vue";
+import Timeline2 from '../svgimage/Timeline2.vue';
 
 export default {
-  components: { Timeline, ThirdSvg },
+  components: { Timeline, ThirdSvg, Timeline2 },
   name: "RandomComponent",
   data() {
     return {
