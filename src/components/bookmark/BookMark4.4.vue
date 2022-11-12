@@ -51,6 +51,10 @@
         </div>
         <div class="right col-lg-6 col-md-12 d-flex flex-column">
           <img src="@/assets/pics/frame4/4.5/vn.svg" class="flag m-auto" />
+          <p class="b6 mt-5">
+            ผู้ผลิตรายย่อยสามารถผลิตคราฟต์เบียร์ในเวียดนาม <br />
+            ได้อย่างเป็นอิสระ เนื่องจากกฎหมายกำหนดไว้ดังนี้
+          </p>
           <!-- <vue-aos animation-class="slideInRight animated"> -->
           <img src="@/assets/pics/frame4/4.5/hand_2.svg" class="hand2 m-auto" />
           <!-- </vue-aos> -->
@@ -188,9 +192,9 @@ span {
 
 @media (max-width: 821px) {
   .alert {
-  height: 40vh;
-  padding: 5rem 7rem 5rem 7rem;
-}
+    height: 40vh;
+    padding: 5rem 7rem 5rem 7rem;
+  }
   .data {
     padding: 2rem;
   }
@@ -223,13 +227,13 @@ span {
 
 /* mobile */
 @media (max-width: 540px) {
-    .alert {
-  height: 30vh;
-  padding: 3rem 5rem 5rem 3rem;
-}
-.alert h2{
-  font-size: 1rem;
-}
+  .alert {
+    height: 30vh;
+    padding: 3rem 5rem 5rem 3rem;
+  }
+  .alert h2 {
+    font-size: 1rem;
+  }
   .factory {
     margin-bottom: 0rem;
   }
