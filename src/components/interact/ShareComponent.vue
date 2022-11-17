@@ -8,10 +8,11 @@
         <div class="content">
           <div class="topic1 d-flex justify-content-center mt-4">
             <img src="@/assets/pics/frame5/5.3/eyes2.svg" />
-            <h3 class="m-2 mb-0 mt-0">รู้อย่างนี้แล้วมาร่วมกันจับตา</h3>
+            <h3 class="m-2 mb-0 mt-0">ถึงแม้ว่าส.ส.จะโหวตคว่ำร่าง</h3>
             <img src="@/assets/pics/frame5/5.3/eyes1.svg" />
           </div>
-          <h3>พ.ร.บ. สุราก้าวหน้าไม่ให้ถูกปัดตกในวาระอื่นๆ</h3>
+          <h3 class="m-2 mb-0 mt-0">พ.ร.บ. สุราก้าวหน้าไปเป็นที่เรียบร้อย</h3>
+          <h3>แต่อย่างไรก็ตามคราฟต์เบียร์ไทยต้องไปต่อ</h3>
 
           <div class="topic2 d-flex flex-column p-lg-5 p-md-2">
             <h2>มาร่วมกันสนับสนุนวงการคราฟต์เบียร์ไทย</h2>
@@ -114,25 +115,25 @@ export default {
 /* mobile */
 @media (max-width: 540px) {
   h3 {
-    font-size: .4rem;
+    font-size: 0.4rem;
   }
-  .topic1{
-    margin-top: .6rem !important;
+  .topic1 {
+    margin-top: 0.6rem !important;
   }
   .topic1 img {
     width: 1rem;
   }
   .topic2 h2 {
-    font-size: .6rem;
+    font-size: 0.6rem;
     margin-top: 0.2rem;
   }
   .topic3 h3 {
-    font-size: .6rem;
-    margin-top: .4rem;
+    font-size: 0.6rem;
+    margin-top: 0.4rem;
   }
-  .topic3 p{
-    font-size: .4rem;
-    padding: .2rem !important;
+  .topic3 p {
+    font-size: 0.4rem;
+    padding: 0.2rem !important;
   }
   .icon {
     width: 2rem;
