@@ -27,12 +27,12 @@
 
           <div class="d-flex justify-content-center">
             <a
-              href="https://www.facebook.com/sharer/sharer.php?u=https://punchupworld.github.io/craftbeerinternlnwza007/"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://project.punchup.world/Thaicraftbeer/"
               target="_blank"
               ><img class="icon" src="@/assets/pics/facebook_icon.svg" alt=""
             /></a>
             <a
-              href="https://twitter.com/intent/tweet?url=https://punchupworld.github.io/craftbeerinternlnwza007/"
+              href="https://twitter.com/intent/tweet?url=https://project.punchup.world/Thaicraftbeer/"
               target="_blank"
               ><img class="icon" src="@/assets/pics/twitter_icon.svg" alt=""
             /></a>
