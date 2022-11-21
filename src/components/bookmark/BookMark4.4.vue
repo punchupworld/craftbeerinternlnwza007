@@ -40,7 +40,7 @@
       <div class="row hand">
         <div class="left col-lg-6 col-md-12 d-flex flex-column">
           <img src="@/assets/pics/frame4/4.5/th.svg" class="flag m-auto" />
-          <p class="b6 mt-5">
+          <p class="comparetext b4 mt-5">
             ผู้ผลิตรายย่อยไม่สามารถผลิตคราฟต์เบียร์ในประเทศไทยได้ <br />
             เพราะต้องเป็นบริษัทที่จดทะเบียนตามกฎหมาย <br />
             ใบอนุญาตโรงต้มเบียร์ขนาดเล็กที่มีเงื่อนไขว่า…
@@ -51,7 +51,7 @@
         </div>
         <div class="right col-lg-6 col-md-12 d-flex flex-column">
           <img src="@/assets/pics/frame4/4.5/vn.svg" class="flag m-auto" />
-          <p class="b6 mt-5">
+          <p class="comparetext b4 mt-5">
             ผู้ผลิตรายย่อยสามารถผลิตคราฟต์เบียร์ในเวียดนาม <br />
             ได้อย่างเป็นอิสระ เนื่องจากกฎหมายกำหนดไว้ดังนี้
           </p>
@@ -259,6 +259,9 @@ span {
     font-size: 0.8rem;
   }
   .text-main h1 {
+    font-size: 1rem;
+  }
+  .comparetext{
     font-size: 1rem;
   }
 }

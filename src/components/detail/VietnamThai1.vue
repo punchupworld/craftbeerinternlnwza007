@@ -61,11 +61,10 @@
           </div>
           <div class="col-lg-5 col-12 more">
             <p class="right-text b5">
-              * ข้อมูลจาก BarthHaas รายงานว่า <br />
-              ในปี 2020 เวียดนามผลิตเบียร์ได้ <br />
-              40,000,000 hl เวียดนามจึงอยู่ใน <br />
-              ลำดับที่ 8 จาก 10 อันดับประเทศ <br />
-              ที่ผลิตเบียร์มากที่สุด *
+              * ข้อมูลจาก BarthHaas<br />
+              รายงานว่าในปี 2020<br />
+              เวียดนามอยู่ในลำดับที่ 8 จาก 10<br />
+              อันดับประเทศที่ผลิตเบียร์มากที่สุด
             </p>
           </div>
         </div>
@@ -122,11 +121,11 @@ p span {
   text-align: left;
   margin: 0;
 }
-.more{
-  align-self:flex-end;
+.more {
+  align-self: flex-end;
   text-align: end;
 }
-.right-text{
+.right-text {
   transform: translateY(30%);
 }
 /* ipad */
