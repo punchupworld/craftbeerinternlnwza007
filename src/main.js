@@ -12,6 +12,9 @@ import 'animate.css'
 
 import store from './store'
 
+// analytic
+import { VuePlausible } from 'vue-plausible'
+
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
@@ -19,6 +22,12 @@ Vue.use(VAnimateCss);
 Vue.use(VueAos)
 
 Vue.config.productionTip = false
+
+// analytic
+Vue.use(VuePlausible, {
+  // see configuration section
+})
+//
 
 new Vue({
   render: h => h(App),
