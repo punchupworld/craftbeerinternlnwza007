@@ -306,7 +306,7 @@ export default {
   margin-left: 3rem;
 }
 .last .effects1 {
-  border: 1px solid black;
+  text-decoration: underline;
   width: fit-content;
 }
 .print {

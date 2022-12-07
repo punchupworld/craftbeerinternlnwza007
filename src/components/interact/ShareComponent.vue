@@ -6,13 +6,7 @@
         class="text text-center d-flex justify-content-center align-items-center"
       >
         <div class="content">
-          <div class="topic1 d-flex justify-content-center mt-4">
-            <img src="@/assets/pics/frame5/5.3/eyes2.svg" />
-            <h3 class="m-2 mb-0 mt-0">ถึงแม้ว่าส.ส.จะโหวตคว่ำร่าง</h3>
-            <img src="@/assets/pics/frame5/5.3/eyes1.svg" />
-          </div>
-          <h3 class="m-2 mb-0 mt-0">พ.ร.บ. สุราก้าวหน้าไปเป็นที่เรียบร้อย</h3>
-          <h3>แต่อย่างไรก็ตามคราฟต์เบียร์ไทยต้องไปต่อ</h3>
+
 
           <div class="topic2 d-flex flex-column p-lg-5 p-md-2">
             <h2>มาร่วมกันสนับสนุนวงการคราฟต์เบียร์ไทย</h2>
@@ -27,12 +21,12 @@
 
           <div class="d-flex justify-content-center">
             <a
-              href="https://www.facebook.com/sharer/sharer.php?u=https://project.punchup.world/Thaicraftbeer/"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://project.punchup.world/thaicraftbeer/"
               target="_blank"
               ><img class="icon" src="@/assets/pics/facebook_icon.svg" alt=""
             /></a>
             <a
-              href="https://twitter.com/intent/tweet?url=https://project.punchup.world/Thaicraftbeer/"
+              href="https://twitter.com/intent/tweet?url=https://project.punchup.world/thaicraftbeer/"
               target="_blank"
               ><img class="icon" src="@/assets/pics/twitter_icon.svg" alt=""
             /></a>
@@ -53,9 +47,6 @@ export default {
 <style scoped>
 .bgimage {
   position: relative;
-}
-.topic1 img {
-  width: 3rem;
 }
 .topic2 h2 {
   background-color: #f4cc2d;
@@ -94,9 +85,6 @@ export default {
   h3 {
     font-size: 1rem;
   }
-  .topic1 img {
-    width: 2rem;
-  }
   .topic2 h2 {
     font-size: 1.3rem;
     margin-top: 0.7rem;
@@ -120,23 +108,22 @@ export default {
   .topic1 {
     margin-top: 0.6rem !important;
   }
-  .topic1 img {
-    width: 1rem;
-  }
+
   .topic2 h2 {
-    font-size: 0.6rem;
+    font-size: .5rem;
     margin-top: 0.2rem;
   }
   .topic3 h3 {
     font-size: 0.6rem;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
   }
   .topic3 p {
     font-size: 0.4rem;
     padding: 0.2rem !important;
+    margin-top: 1rem;
   }
   .icon {
-    width: 2rem;
+    width: 2.5rem;
   }
 }
 </style>

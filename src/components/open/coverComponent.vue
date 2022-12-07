@@ -316,6 +316,10 @@ body {
   margin: 5% 10%;
 }
 
+.b4{
+  font-size: 14px;
+}
+
 /* ipad */
 @media (max-width: 821px) {
   .hhh {

@@ -53,17 +53,10 @@
       class="bottlelayer container-fluid d-flex justify-content-center align-items-center pt-lg-5 pb-lg-5 pt-sm-2 pb-sm-2"
     >
       <div>
-        <h1 class="bighead text-center">
-          เราได้รวบรวมข้อมูลคราฟต์เบียร์จำนวน <span>244</span> ตัว <br />
-          จากคราฟต์เบียร์ไทย 24 แบรนด์ พบว่า…
+        <h1 class="bighead text-center mb-5">
+          จาก 24 แบรนด์แม่ ผลิตคราฟต์เบียร์ออกมาถึง 244 ผลิตภัณฑ์ <br />
+          จากการรวบรวมข้อมูลพบว่า…
         </h1>
-        <p class="subhead b5 text-center grey">
-          (ข้อมูลคราฟต์เบียร์อิงจากเว็บไซต์ untappd และ brewver)
-        </p>
-
-        <div class="layer">
-          <bottle-layer></bottle-layer>
-        </div>
 
         <p class="ending b4 text-center">
           คราฟต์เบียร์ไทยส่วนใหญ่เป็นประเภท IPA รองลงมาเป็น Pale Ale, Wheat Beer
@@ -81,6 +74,15 @@
             ตัว), Plisner (7 ตัว), Fruit Beer (1 ตัว) และ Kolsch (1 ตัว)
           </p>
         </div>
+
+        <p class="subhead b5 text-center grey">
+          (ข้อมูลคราฟต์เบียร์อิงจากเว็บไซต์ untappd และ brewver)
+        </p>
+
+        <div class="layer">
+          <bottle-layer></bottle-layer>
+        </div>
+
       </div>
     </div>
 

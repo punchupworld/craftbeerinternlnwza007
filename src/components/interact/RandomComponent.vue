@@ -1,9 +1,9 @@
 <template>
   <div>
     <div
-      class="bookmark-bg container-fluid d-flex justify-content-center align-items-center"
+      class="bookmark-bg container-fluid d-flex flex-column justify-content-center align-items-center"
     >
-      <div
+      <!-- <div
         class="dis d-flex justify-content-center align-items-center"
         v-if="toggle == true"
       >
@@ -18,12 +18,13 @@
             <img src="@/assets/pics/frame3/3.3/disclaimer.svg" alt="" />
           </div>
         </vue-aos>
-      </div>
+      </div> -->
+      <h1 class="textbutton">ลองกดปุ่มนี้เพื่อลองสุ่มเบียร์ของคุณดูสิ !</h1>
       <button
         class="randombtn d-flex justify-content-center align-items-center b3"
         @click="randomBeer"
       >
-        Random!
+        Click Me!
       </button>
     </div>
 
@@ -102,6 +103,7 @@
         <div class="timeline text-center mt-5">
           <img src="@/assets/pics/frame3/3.5/smalltimeline.svg" alt="" />
         </div>
+
       </div>
     </div>
 
@@ -296,7 +298,7 @@ export default {
 .text {
   margin-top: 5rem;
 }
-/* disclaimer */
+/* disclaimer
 .dis {
   position: absolute;
   width: 100%;
@@ -322,7 +324,8 @@ export default {
 .close:hover {
   background: #de5850;
   color: white;
-}
+} */
+
 .content-timeline {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -360,6 +363,9 @@ export default {
 .big-timeline {
   height: 100%;
 }
+.textbutton{
+  margin-bottom: 5rem;
+}
 
 /* ipad */
 @media (max-width: 821px) {
@@ -389,6 +395,9 @@ export default {
   }
   .right1 {
     padding: 0rem 2rem;
+  }
+    .textbutton{
+    font-size: 1.8rem;
   }
 }
 
@@ -444,6 +453,9 @@ export default {
     width: 1.5rem;
     height: 1.5rem;
     font-size: 1rem;
+  }
+  .textbutton{
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 376px) {

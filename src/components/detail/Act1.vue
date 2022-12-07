@@ -149,6 +149,36 @@
           </div>
         </div>
       </div>
+
+      <div class="more p-5">
+        <div class="moretext p-4 m-auto">
+          <div class="topic1 d-flex justify-content-center ">
+            <img src="@/assets/pics/frame5/5.3/eyes2.svg" />
+            <h4 class="m-2 mb-0 mt-0">
+              ถึงแม้ว่า ส.ส. จะโหวตคว่ำร่าง พ.ร.บ. สุราก้าวหน้า
+            </h4>
+            <img src="@/assets/pics/frame5/5.3/eyes1.svg" />
+          </div>
+          <h4 class="text-center m-2 mb- mb-2 mt-0">
+            ด้วยคะแนนไม่เห็นด้วย 196 ต่อ 194 เสียง
+            และในวันเดียวกันนั้นรัฐบาลได้ประกาศบังคับใช้
+          </h4>
+          <h4 class="text-center mb-2">
+            กฎกระทรวงการผลิตสุรา 2565 ซึ่งมีจุดประสงค์เดียวกับ พ.ร.บ.
+            สุราก้าวหน้า แต่มีรายละเอียดปลีกย่อยที่แตกต่างกัน
+          </h4>
+        </div>
+
+        <div class="moretext2 mt-5 p-2">
+          <p class="b4 text-center">
+            "แม้ว่าการผ่อนคลายเงื่อนไขการผลิตสุราของกฎกระทรวงถือเป็นโอกาส <br />
+            ที่จะช่วยส่งเสริมความสามารถในการแข่งขันของผู้ผลิตสุรารายย่อย
+            แต่กฎกระทรวงนี้จะพาให้คราฟต์เบียร์ไทย <br />
+            มีทางเลือกในรสชาติมากกว่าและราคาจับต้องได้มากน้อยแค่ไหน
+            คงต้องจับตาดูกันต่อไป..."
+          </p>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -200,6 +230,7 @@ export default {
   color: #de5850;
   padding: 3rem;
 }
+
 .hand {
   width: 70%;
 }
@@ -290,6 +321,20 @@ span {
   margin-bottom: 0;
   font-size: 1.2rem;
 }
+/* more */
+.more {
+  background-color: #f8ef8f;
+}
+.moretext{
+  background-color: white;
+  width: fit-content;
+}
+.topic1 img {
+  width: 3rem;
+}
+.moretext2 p {
+  color: #de5850;
+}
 
 /* ipad */
 @media (max-width: 821px) {
@@ -315,6 +360,9 @@ span {
   }
   .imgcontent img {
     width: 60%;
+  }
+  .topic1 img {
+    width: 2rem;
   }
 }
 @media (max-width: 540px) {
@@ -359,6 +407,9 @@ span {
   .t-black,
   .t-white {
     font-size: 1rem;
+  }
+  .topic1 img {
+    width: 1rem;
   }
 }
 </style>
