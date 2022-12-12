@@ -183,7 +183,7 @@
             y="127"
             width="170"
             height="170"
-            fill="url(#pattern2)"
+            fill="url(#patternn2)"
           />
           <rect
             id="image 265"
@@ -191,7 +191,7 @@
             y="127"
             width="170"
             height="170"
-            fill="url(#pattern3)"
+            fill="url(#patternn3)"
           />
         </g>
         <defs>
@@ -218,7 +218,7 @@
             />
           </pattern>
           <pattern
-            id="pattern2"
+            id="patternn2"
             patternContentUnits="objectBoundingBox"
             width="1"
             height="1"
@@ -229,7 +229,7 @@
             />
           </pattern>
           <pattern
-            id="pattern3"
+            id="patternn3"
             patternContentUnits="objectBoundingBox"
             width="1"
             height="1"
